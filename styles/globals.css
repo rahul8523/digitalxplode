@@ -1,0 +1,82 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Google Sans Flex", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "ROND" 0;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-950 antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer components {
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  .marquee-reverse {
+    animation-direction: reverse;
+  }
+
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  header {
+    @apply font-display tracking-tight;
+  }
+
+  header h1,
+  header h2,
+  header h3 {
+    @apply font-semibold tracking-tight;
+  }
+}
+.team-dx{
+  width:200px;
+}
