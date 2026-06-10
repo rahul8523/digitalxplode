@@ -57,7 +57,7 @@ export default function ClientsShowcase() {
           <div className="overflow-hidden">
             <div className="marquee min-w-[200%] flex items-center gap-6">
               {[...layerLogos, ...layerLogos].map((src, i) => (
-                <div key={i} className="flex-shrink-0 rounded-[12px] p-4 shadow-sm">
+                <div key={i} className="flex-shrink-0 rounded-[12px]">
                   <img src={src} alt={`Layer logo ${i + 1}`} className="h-12 w-auto object-contain" />
                 </div>
               ))}
@@ -67,7 +67,7 @@ export default function ClientsShowcase() {
           <div className="overflow-hidden">
             <div className="marquee marquee-reverse min-w-[200%] flex items-center gap-6 px-6 py-6">
               {[...clientLogos, ...clientLogos].map((src, i) => (
-                <div key={i} className="flex-shrink-0 rounded-[12px] p-4 shadow-sm">
+                <div key={i} className="flex-shrink-0 rounded-[12px]">
                   <img src={src} alt={`Client ${i + 1}`} className="h-12 w-auto object-contain" />
                 </div>
               ))}

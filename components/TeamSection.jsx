@@ -13,27 +13,27 @@ const teamMembers = [
   },
   {
     name: 'Kushagra Singh',
-    position: 'Vice President Business Development',
-    badge: 'Business Development',
+    position: 'Vice President',
+    badge: 'Vice President',
     description:
       'I help align marketing growth plans with sales goals, ensuring each campaign is designed to create qualified leads and long-term customer relationships.',
-    image: '/team/VP-BD.png',
+    image: '/team/Kush.jpg',
   },
   {
     name: 'Shweta Mishra',
-    position: 'COO',
-    badge: 'Operations Leader',
+    position: 'Head Operations',
+    badge: 'Head Operations',
     description:
       'I drive execution across teams and ensure our growth systems are efficient, scalable, and optimised for manufacturing and industrial marketing outcomes.',
-    image: '/team/COO.png',
+    image: '/team/shweta.jpg',
   },
   {
-    name: 'Pratima',
-    position: 'Social Media Manager',
-    badge: 'Social Media Manager',
+    name: 'Manjeet Kumar',
+    position: 'Creative Director',
+    badge: 'Creative Director',
     description:
       'I build high-engagement digital campaigns and content systems that help industrial brands stay visible, trusted, and top-of-mind with decision-makers.',
-    image: '/team/Social-Media-Manager.png',
+    image: '/team/Manjeet.jpg',
   },
   {
     name: 'Hareesh Kumar',
@@ -41,31 +41,31 @@ const teamMembers = [
     badge: 'Ads Expert',
     description:
       'I design targeted ad strategies for Google, LinkedIn, and performance channels that reduce acquisition costs and improve lead quality for manufacturing businesses.',
-    image: '/team/Ads-Expert.png',
+    image: '/team/Hareesh.jpg',
   },
   {
     name: 'Tilak Gautam',
-    position: 'Web Developer',
-    badge: 'Web Developer',
+    position: 'Sr. Web Developer',
+    badge: 'Sr. Web Developer',
     description:
       'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
-    image: '/team/Web-Developer.png',
+    image: '/team/tilak-n.jpg',
   },
   {
-    name: 'Tilak Gautam 1',
-    position: 'Web Developer',
-    badge: 'Web ',
+    name: 'Rahul Singh Chauhan',
+    position: 'Full Stack Developer',
+    badge: 'Full Stack Developer',
     description:
       'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
-    image: '/team/Web-Developer.png',
+    image: '/team/Rahul-new.jpg',
   },
   {
-    name: 'Tilak Gautam 2',
-    position: 'Web Developer',
-    badge: 'Web Developer',
+    name: 'Shikha Kushwaha',
+    position: 'Executive Web Developer',
+    badge: 'Executive Web Developer',
     description:
       'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
-    image: '/team/Web-Developer.png',
+    image: '/team/shikhaa.jpeg',
   },
 ];
 
@@ -165,7 +165,7 @@ export default function TeamSection() {
 
         <div className="grid sm:m-10 gap-6 lg:grid-cols-[0.8fr_1.2fr] shadow-2xl rounded-[32px]">
           <div className="rounded-[32px] p-6 text-center text-black sm:py-12">
-            <div className="m-auto max-w-[260px] overflow-hidden rounded-full border-1 border-white/6 p-1 shadow-2xl">
+            <div className="m-auto max-w-[260px] overflow-hidden rounded-full border-1 border-white/6 p-1">
               <img src={activeMember.image} alt={activeMember.name} className="h-auto w-[260px] rounded-full object-cover" />
             </div>
             <div className="mt-8 space-y-2">
