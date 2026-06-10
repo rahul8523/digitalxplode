@@ -14,7 +14,7 @@ export default function ClientsShowcase() {
 
   return (
     <section className="bg-[f3f9ff] py-12">
-      <div className="mx-auto max-w-[1400px] px-4 text-center">
+      <div className="mx-auto max-w-7x1 px-4 text-center">
         <h2 className="text-4xl font-semibold text-slate-900">Trusted Growth Partner for Manufacturing Companies</h2>
         <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Our manufacturing-focused digital marketing strategies have helped industrial brands improve visibility, generate enquiries, and build market authority.</p>
 
