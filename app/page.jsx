@@ -147,7 +147,7 @@ export default function Home() {
                   Top Graduates Hired By
                 </h3>
                 <div className="overflow-hidden rounded-[28px]  bg-slate-50">
-                  <div className="marquee min-w-[200%] flex items-center gap-8 px-4 py-6">
+                  <div className="marquee min-w-[200%] flex items-center gap-8 px-4">
                     {['/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png', '/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png'].map((src, index) => (
                       <div key={index} className="flex-shrink-0 rounded-3xl bg-white p-2 shadow-sm">
                         <img src={src} alt={`Client ${index % 6 + 1}`} className="h-12 w-24 object-contain" />
