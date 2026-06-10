@@ -1,15 +1,31 @@
 export default function ClientsShowcase() {
-  const logos = [
+  const clientLogos = [
     '/clientlogo/client1.png',
     '/clientlogo/client2.png',
     '/clientlogo/client3.png',
     '/clientlogo/client4.png',
     '/clientlogo/client5.png',
     '/clientlogo/client6.png',
+    '/clientlogo/client7.png',
+    '/clientlogo/client8.png',
+    '/clientlogo/client9.png',
+    '/clientlogo/client10.png',
+    '/clientlogo/client11.png',
+  ];
+
+  const layerLogos = [
     '/clientlogo/Layer11.png',
     '/clientlogo/Layer12.png',
     '/clientlogo/Layer13.png',
     '/clientlogo/Layer14.png',
+    '/clientlogo/Layer15.png',
+    '/clientlogo/Layer16.png',
+    '/clientlogo/Layer17.png',
+    '/clientlogo/Layer18.png',
+    '/clientlogo/Layer19.png',
+    '/clientlogo/Layer20.png',
+    '/clientlogo/Layer21.png',
+    '/clientlogo/Layer22.png',
   ];
 
   return (
@@ -38,21 +54,21 @@ export default function ClientsShowcase() {
         </div>
 
         <div className="mt-10 space-y-4">
-          <div className="overflow-hidden bg-white">
+          <div className="overflow-hidden">
             <div className="marquee min-w-[200%] flex items-center gap-6">
-              {[...logos.slice(0, 10), ...logos.slice(0, 10)].map((src, i) => (
-                <div key={i} className="flex-shrink-0 rounded-3xl bg-slate-50 p-4 shadow-sm">
-                  <img src={src} alt={`Client ${i + 1}`} className="h-12 w-auto object-contain" />
+              {[...layerLogos, ...layerLogos].map((src, i) => (
+                <div key={i} className="flex-shrink-0 rounded-[12px] p-4 shadow-sm">
+                  <img src={src} alt={`Layer logo ${i + 1}`} className="h-12 w-auto object-contain" />
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="overflow-hidden bg-white">
+          <div className="overflow-hidden">
             <div className="marquee marquee-reverse min-w-[200%] flex items-center gap-6 px-6 py-6">
-              {[...logos.slice(0, 10), ...logos.slice(0, 10)].map((src, i) => (
-                <div key={i} className="flex-shrink-0 rounded-3xl bg-slate-50 p-4 shadow-sm">
-                  <img src={src} alt={`Client ${i + 6}`} className="h-12 w-auto object-contain" />
+              {[...clientLogos, ...clientLogos].map((src, i) => (
+                <div key={i} className="flex-shrink-0 rounded-[12px] p-4 shadow-sm">
+                  <img src={src} alt={`Client ${i + 1}`} className="h-12 w-auto object-contain" />
                 </div>
               ))}
             </div>

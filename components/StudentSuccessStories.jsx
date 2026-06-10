@@ -97,7 +97,7 @@ export default function StudentSuccessStories() {
       </div>
 
       <div className="mt-12 grid gap-4 xl:grid-cols-[0.8fr_1fr_1fr] items-start">
-        <div className="mt-8 max-h-[560px] overflow-hidden overscroll-contain pr-2 hide-scrollbar bg-white">
+        <div className="mt-8 max-h-[560px] overflow-hidden overscroll-contain pr-2 hide-scrollbar">
           <div className="marquee-vertical space-y-4">
             {testimonials.map((item, index) => (
               <button

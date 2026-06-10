@@ -97,13 +97,13 @@ export default function Home() {
                 industrial brands, OEM suppliers, machinery companies, engineering firms, and B2B businesses looking to increase visibility, generate qualified leads, and build industry authority.
               </p>
               <div className="grid gap-4 grid-cols-2 sm:grid-cols-4 mb-4">
-                <div className="bg-white shadow-sm">
+                <div className="rounded-[12px] bg-white overflow-hidden border bg-slate-50 border-sky-300">
                   <img src="/mainreview/review.png" alt="Verified Reviews" className="h-20 w-full object-contain" />
                 </div>
-                <div className="bg-white shadow-sm">
+                <div className="rounded-[12px] bg-white overflow-hidden border bg-slate-50 border-sky-300">
                   <img src="/mainreview/google.png" alt="Google Certified" className="h-20 w-full object-contain" />
                 </div>
-                <div className="bg-white shadow-sm">
+                <div className="rounded-[12px] bg-white overflow-hidden border bg-slate-50 border-sky-300">
                   <img src="/mainreview/meta.png" alt="Meta Verified" className="h-20 w-full object-contain" />
                 </div>
               </div>
@@ -146,10 +146,10 @@ export default function Home() {
                 <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-900 mb-5">
                   Top Graduates Hired By
                 </h3>
-                <div className="overflow-hidden rounded-[28px]  bg-slate-50">
+                <div className="overflow-hidden">
                   <div className="marquee min-w-[200%] flex items-center gap-8 px-4">
                     {['/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png', '/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png'].map((src, index) => (
-                      <div key={index} className="flex-shrink-0 rounded-3xl bg-white p-2 shadow-sm">
+                      <div key={index} className="flex-shrink-0 rounded-[12px] p-2 shadow-sm">
                         <img src={src} alt={`Client ${index % 6 + 1}`} className="h-12 w-24 object-contain" />
                       </div>
                     ))}
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
             </div>
 
-            <aside className="rounded-[32px] bg-white shadow-xl ring-1 ring-slate-200/60">
+            <aside className="rounded-[32px] text-center bg-white shadow-xl ring-1 ring-slate-200/60">
               <div className="rounded-t-[22px] bg-sky-400 px-8 py-8 text-white">
                 <p className="text-2xl font-semibold text-sky-100/90">Get the Complete Details</p>
                 <h3 className="mt-4 text-xl mt-0 font-medium text-black">About the Services</h3>
@@ -222,7 +222,7 @@ export default function Home() {
         <ClientsShowcase />
 
         <section className="mx-auto max-w-[1240px] py-12 px-4">
-          <div className=" bg-white p-6 shadow-sm ring-1 ring-slate-100 sm:p-10">
+          <div className="p-6 sm:p-10">
             <div className="mb-8 text-center">
               <p className="text-xl mb-2 font-semibold text-sky-500">Our Core Services</p>
               <h2 className="text-4xl font-semibold text-slate-900">Manufacturing SEO/AEO/GEO</h2>

@@ -15,11 +15,11 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl shadow-sm shadow-slate-100/70">
+      <header className="sticky top-0 z-50 border-b border-slate-200 py-2 bg-white/95 backdrop-blur-xl shadow-sm shadow-slate-100/70">
         <div className="relative mx-auto flex max-w-[1240px] items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-4">
-            <img src="/logo/logo.png" alt="Digital Xplode" className="h-13 w-auto" />
+            <img src="/logo/logo.png" alt="Digital Xplode" className="h-13 w-[200px]" />
           </div>
 
           {/* Desktop Navigation */}

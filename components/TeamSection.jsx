@@ -122,8 +122,8 @@ export default function TeamSection() {
         </p>
       </div>
 
-      <div className="mt-12 overflow-hidden bg-white">
-        <div className="bg-slate-50 px-4 py-4 sm:px-6 ">
+      <div className="mt-12 overflow-hidden">
+        <div className="px-4 py-4 sm:px-6 ">
           <div
             ref={tabsRef}
             onWheel={handleWheel}
@@ -175,7 +175,7 @@ export default function TeamSection() {
             </div>
           </div>
 
-          <div className="bg-white p-6 shadow-sm sm:py-12 border-t-[5px] border-t-sky-500 rounded-tr-[8px] rounded-bl-[8px]">
+          <div className="p-6 shadow-sm sm:py-12 border-t-[5px] border-t-sky-500 rounded-tr-[8px] rounded-bl-[8px]">
             <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-100 px-4 py-2 text-sm font-semibold text-black">
               <span className="h-2 w-2 rounded-full bg-sky-500"></span>
               {activeMember.badge}
