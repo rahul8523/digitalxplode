@@ -222,7 +222,7 @@ export default function Home() {
         <ClientsShowcase />
 
         <section className="mx-auto max-w-[1240px] py-12 px-4">
-          <div className="p-6 sm:p-10">
+          <div className="sm:p-10">
             <div className="mb-8 text-center">
               <p className="text-xl mb-2 font-semibold text-sky-500">Our Core Services</p>
               <h2 className="text-4xl font-semibold text-slate-900">Manufacturing SEO/AEO/GEO</h2>
