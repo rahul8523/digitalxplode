@@ -67,6 +67,23 @@
     animation-play-state: paused;
   }
 
+  @keyframes marquee-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-12%);
+    }
+  }
+
+  .marquee-vertical {
+    animation: marquee-vertical 10s ease-in-out infinite alternate;
+  }
+
+  .marquee-vertical:hover {
+    animation-play-state: paused;
+  }
+
   header {
     @apply font-display tracking-tight;
   }

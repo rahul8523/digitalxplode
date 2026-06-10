@@ -9,14 +9,14 @@ export default function Header() {
     <>
       {/* Top Bar */}
       <div className="border-b border-slate-200 bg-gradient-to-r from-[#dcefff] via-white to-[#dcefff] hidden sm:block">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-end px-4 py-3 text-lg text-slate-900 sm:px-6">
+        <div className="mx-auto flex max-w-[1240px] items-center justify-end px-4 py-3 text-lg text-slate-900 sm:px-6">
           <p>info@digitalxplode.com | support@digitalxplode.com</p>
         </div>
       </div>
 
       {/* Main Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl shadow-sm shadow-slate-100/70">
-        <div className="relative mx-auto flex max-w-[1400px] items-center justify-between gap-4">
+        <div className="relative mx-auto flex max-w-[1240px] items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-4">
             <img src="/logo/logo.png" alt="Digital Xplode" className="h-13 w-auto" />

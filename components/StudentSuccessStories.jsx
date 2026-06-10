@@ -4,10 +4,11 @@ const testimonials = [
   {
     name: 'Mr Prashant Agarwal',
     role: 'Perfect metal structures',
-    quote: 'Digital Xplode - Driving Measurable Growth for Manufacturing Brands.',
+    quote: 'All thanks to the faculty, in-depth training, and internship, I have my portfolio ready.',
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
     avatar: '/clientlogo/client1.png',
+    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
   {
     name: 'Gunifsa 1',
@@ -16,6 +17,7 @@ const testimonials = [
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
     avatar: '/clientlogo/client2.png',
+    videoUrl: 'https://iimskills.com/NEWDM/anvi.mp4',
   },
   {
     name: 'Mr Prashant',
@@ -24,6 +26,7 @@ const testimonials = [
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
     avatar: '/clientlogo/client3.png',
+    videoUrl: 'https://iimskills.com/NEWDM/anvi.mp4',
   },
   {
     name: 'Gunifsa 2',
@@ -32,21 +35,23 @@ const testimonials = [
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
     avatar: '/clientlogo/client4.png',
+    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
   {
     name: 'Gunifsa 3',
     role: 'HTC',
-    quote: 'Digital Xplode - Driving Measurable Growth for Manufacturing Brands.',
+    quote: 'Thankful for the real-time practical exposure and full support from the team.',
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
     avatar: '/clientlogo/client5.png',
+    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
 ];
 
 export default function StudentSuccessStories() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const itemRefs = useRef([]);
-  const listRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
   const active = testimonials[activeIndex];
 
   useEffect(() => {
@@ -58,25 +63,27 @@ export default function StudentSuccessStories() {
   }, []);
 
   useEffect(() => {
-    const container = listRef.current;
-    const activeItem = itemRefs.current[activeIndex];
+    const video = videoRef.current;
+    if (!video) return;
 
-    if (!container || !activeItem) return;
+    const handleEnded = () => setIsPlaying(false);
+    video.addEventListener('ended', handleEnded);
 
-    const itemTop = activeItem.offsetTop;
-    const itemBottom = itemTop + activeItem.offsetHeight;
-    const containerTop = container.scrollTop;
-    const containerBottom = containerTop + container.clientHeight;
+    return () => {
+      video.removeEventListener('ended', handleEnded);
+    };
+  }, []);
 
-    if (itemTop < containerTop) {
-      container.scrollTo({ top: itemTop - 12, behavior: 'smooth' });
-    } else if (itemBottom > containerBottom) {
-      container.scrollTo({ top: itemBottom - container.clientHeight + 12, behavior: 'smooth' });
-    }
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.pause();
+    setIsPlaying(false);
   }, [activeIndex]);
 
   return (
-    <section className="mx-auto max-w-7x1 px-4 py-12">
+    <section className="mx-auto max-w-[1240px] px-4 py-12">
       <div className="text-center">
         {/* <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">
           Student Success Stories
@@ -90,32 +97,28 @@ export default function StudentSuccessStories() {
       </div>
 
       <div className="mt-12 grid gap-4 xl:grid-cols-[0.8fr_1fr_1fr] items-start">
-        <div
-          ref={listRef}
-          className="mt-8 max-h-[560px] overflow-y-auto overscroll-contain pr-2 space-y-4 hide-scrollbar"
-          style={{ touchAction: 'pan-y' }}
-        >
-          {testimonials.map((item, index) => (
-            <button
-              ref={(el) => (itemRefs.current[index] = el)}
-              key={item.name}
-              type="button"
-              onClick={() => setActiveIndex(index)}
-              className={`group w-full rounded-[32px] border px-10 py-5 text-left transition ${
-                activeIndex === index
-                  ? 'border-sky-300 bg-slate-50 shadow-lg'
-                  : 'border-slate-300 bg-white hover:border-sky-400'
-              }`}
-            >
+        <div className="mt-8 max-h-[560px] overflow-hidden overscroll-contain pr-2 hide-scrollbar bg-white">
+          <div className="marquee-vertical space-y-4">
+            {testimonials.map((item, index) => (
+              <button
+                key={item.name}
+                type="button"
+                onClick={() => setActiveIndex(index)}
+                className={`group w-full rounded-[12px] border px-4 py-3 text-left transition ${
+                  activeIndex === index
+                    ? 'border-sky-300 bg-slate-50 shadow-lg'
+                    : 'border-slate-300 bg-white hover:border-sky-400'
+                }`}
+              >
               <div className="flex gap-4">
                 <img src={item.avatar} alt={item.name} className="h-12 w-12 rounded-full object-cover" />
                 <div className="flex-1">
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <p className="text-base font-semibold text-slate-900">{item.name}</p>
-                      <p className="mt-1 text-xs text-slate-500">{item.role}</p>
+                      <p className="text-xs text-slate-500">{item.role}</p>
                     </div>
-                    <div className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition ${
+                    <div className={`inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition ${
                       activeIndex === index
                         ? 'border-sky-300 bg-sky-50 text-sky-600'
                         : 'group-hover:border-sky-300 group-hover:text-sky-600'
@@ -125,24 +128,55 @@ export default function StudentSuccessStories() {
                       </svg>
                     </div>
                   </div>
-                  <p className="mt-2 text-xs leading-6 text-slate-600">"{item.quote}"</p>
+                  <p className="mt-1 text-xs text-gray-600 italic line-clamp-2 leading-snug opacity-80">"{item.quote}"</p>
                 </div>
               </div>
             </button>
           ))}
-        </div>
-
-        <div className="bg-white p-6 shadow-sm">
-          <div className="flex h-[520px] items-center justify-center rounded-[32px] border border-slate-200 bg-slate-50">
-            <button className="inline-flex h-20 w-20 items-center justify-center rounded-full border border-sky-300 bg-white text-sky-600 shadow-sm transition hover:scale-105">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-10 w-10">
-                <path fill="currentColor" d="M8 5v14l11-7L8 5Z" />
-              </svg>
-            </button>
           </div>
         </div>
 
-        <div className="bg-white p-0 shadow-sm mt-8">
+        <div className="p-6 shadow-sm">
+          <div className="flex h-auto flex-col items-center justify-center rounded-[32px] text-center">
+            <div className="relative flex-shrink-0 w-full h-[250px] md:h-[550px] rounded-2xl overflow-hidden self-center transition-all duration-500">
+              <video
+                ref={videoRef}
+                src={active.videoUrl}
+                className="w-full h-full object-cover"
+                playsInline
+                loop
+              />
+              <div
+                className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity duration-300"
+                onClick={() => {
+                  const video = videoRef.current;
+                  if (!video) return;
+                  if (video.paused) {
+                    video.play();
+                    setIsPlaying(true);
+                  } else {
+                    video.pause();
+                    setIsPlaying(false);
+                  }
+                }}
+              >
+                {!isPlaying && (
+                  <button
+                    type="button"
+                    className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform duration-200"
+                    aria-label="Play video"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-8 w-8 text-white">
+                      <path fill="currentColor" d="M8 5v14l11-7L8 5Z" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-0 shadow-sm mt-8">
           <p className="text-lg font-semibold text-sky-500">
             Verified Manufacturing Growth Story
           </p>
@@ -150,11 +184,11 @@ export default function StudentSuccessStories() {
           <p className="mt-1 text-xl text-slate-700">{active.role}</p>
           <div className="my-5">
             <div className="gap-4">
-              <img src="/icons/comma.png" alt={active.name} className="py-2" />
-              <p className="border-l-4 border-sky-400 pl-4 text-2xl font-semibold text-slate-900">"{active.quote}"</p>
+              <img src="/icons/comma.png" alt={active.name} className="py-2 w-12" />
+              <p className="border-l-4 border-sky-400 sm:mb-8  pl-4 text-xl text-gray-800 font-medium">"{active.quote}"</p>
             </div>
           </div>
-          <em className="text-xl leading-7 text-slate-600">"{active.details}"</em>
+          <em className="text-base text-gray-600">"{active.details}"</em>
         </div>
       </div>
     </section>

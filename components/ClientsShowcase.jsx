@@ -14,7 +14,7 @@ export default function ClientsShowcase() {
 
   return (
     <section className="bg-[f3f9ff] py-12">
-      <div className="mx-auto max-w-7x1 px-4 text-center">
+      <div className="mx-auto max-w-[1240px] px-4 text-center">
         <h2 className="text-4xl font-semibold text-slate-900">Trusted Growth Partner for Manufacturing Companies</h2>
         <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Our manufacturing-focused digital marketing strategies have helped industrial brands improve visibility, generate enquiries, and build market authority.</p>
 
@@ -39,7 +39,7 @@ export default function ClientsShowcase() {
 
         <div className="mt-10 space-y-4">
           <div className="overflow-hidden bg-white">
-            <div className="marquee min-w-[200%] flex items-center gap-6 px-6 py-6">
+            <div className="marquee min-w-[200%] flex items-center gap-6">
               {[...logos.slice(0, 10), ...logos.slice(0, 10)].map((src, i) => (
                 <div key={i} className="flex-shrink-0 rounded-3xl bg-slate-50 p-4 shadow-sm">
                   <img src={src} alt={`Client ${i + 1}`} className="h-12 w-auto object-contain" />

@@ -111,7 +111,7 @@ export default function TeamSection() {
   };
 
   return (
-    <section className="mx-auto max-w-7x1 py-16 px-4 sm:px-6">
+    <section className="mx-auto max-w-[1240px] py-16 px-4 sm:px-6">
       <div className="mx-auto max-w-4xl text-center">
         {/* <p className="text-sm font-semibold uppercase tracking-[0.36em] text-slate-500">Meet your growth experts</p> */}
         <h2 className="text-4xl font-semibold text-slate-900">

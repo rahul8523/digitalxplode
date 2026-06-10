@@ -77,7 +77,7 @@ export default function Home() {
 
 
       <main className="">
-        <section className="mx-auto max-w-7x1 py-12 px-4">
+        <section className="mx-auto max-w-[1240px] py-12 px-4">
           <div className="grid grid-cols-1 gap-10 xl:grid-cols-[1.45fr_0.85fr] xl:items-start">
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
             </div>
 
-            <aside className="rounded-[32px] bg-white shadow-[0_40px_80px_rgba(15,23,42,0.12)] ring-1 ring-slate-200/60">
+            <aside className="rounded-[32px] bg-white shadow-xl ring-1 ring-slate-200/60">
               <div className="rounded-t-[22px] bg-sky-400 px-8 py-8 text-white">
                 <p className="text-2xl font-semibold text-sky-100/90">Get the Complete Details</p>
                 <h3 className="mt-4 text-xl mt-0 font-medium text-black">About the Services</h3>
@@ -221,7 +221,7 @@ export default function Home() {
         </section>
         <ClientsShowcase />
 
-        <section className="mx-auto max-w-7x1 py-12 px-4">
+        <section className="mx-auto max-w-[1240px] py-12 px-4">
           <div className=" bg-white p-6 shadow-sm ring-1 ring-slate-100 sm:p-10">
             <div className="mb-8 text-center">
               <p className="text-xl mb-2 font-semibold text-sky-500">Our Core Services</p>
