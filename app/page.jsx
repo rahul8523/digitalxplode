@@ -77,7 +77,7 @@ export default function Home() {
 
 
       <main className="">
-        <section className="mx-auto max-w-[1400px] py-12 px-4">
+        <section className="mx-auto max-w-7x1 py-12 px-4">
           <div className="grid grid-cols-1 gap-10 xl:grid-cols-[1.45fr_0.85fr] xl:items-start">
             <div>
               <div className="inline-flex items-center gap-3 rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700">
@@ -221,7 +221,7 @@ export default function Home() {
         </section>
         <ClientsShowcase />
 
-        <section className="mx-auto max-w-[1400px] py-12 px-4">
+        <section className="mx-auto max-w-7x1 py-12 px-4">
           <div className=" bg-white p-6 shadow-sm ring-1 ring-slate-100 sm:p-10">
             <div className="mb-8 text-center">
               <p className="text-xl mb-2 font-semibold text-sky-500">Our Core Services</p>
