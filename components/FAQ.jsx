@@ -21,7 +21,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="mx-auto max-w-[1400px] px-4 py-12">
+    <section className="mx-auto max-w-7x1 px-4 py-12">
       <div className="text-center">
         <h2 className="text-3xl sm:text-4xl font-bold">Have Questions? Frequently Asked Questions</h2>
         <p className="mt-2 text-slate-600">Clear your doubts about lead generation, industrial branding, and ROI-driven marketing.</p>
