@@ -163,7 +163,7 @@ export default function TeamSection() {
           </div>
         </div>
 
-        <div className="grid m-10 gap-6 lg:grid-cols-[0.8fr_1.2fr] shadow-2xl rounded-[32px]">
+        <div className="grid sm:m-10 gap-6 lg:grid-cols-[0.8fr_1.2fr] shadow-2xl rounded-[32px]">
           <div className="rounded-[32px] p-6 text-center text-black sm:py-12">
             <div className="m-auto max-w-[260px] overflow-hidden rounded-full border-1 border-white/6 p-1 shadow-2xl">
               <img src={activeMember.image} alt={activeMember.name} className="h-auto w-[260px] rounded-full object-cover" />
