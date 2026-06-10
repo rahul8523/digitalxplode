@@ -17,7 +17,7 @@ export default function Home() {
         <img src="/icons/searchse.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Understand customer psychology, market research, and the strategic difference between inbound & outbound marketing.',
+        'Traditional SEO Foundation refers to the core practices used to improve a website’s visibility in search engines through strong on-page, technical, and content optimization. It focuses on creating a solid structure that helps search engines understand, crawl, and rank pages effectively.',
       ],
     },
     {
