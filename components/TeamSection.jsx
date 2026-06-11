@@ -10,6 +10,7 @@ const teamMembers = [
     description:
       'In my sessions, I take learners through the journey of how I scaled IIM SKILLS to a major global ed-tech brand through performance marketing, SEO, and analytics, providing them with real insights.',
     image: '/team/CEO.png',
+    linkedin: 'https://www.linkedin.com/in/sudhanshuarora',
   },
   {
     name: 'Kushagra Singh',
@@ -18,6 +19,7 @@ const teamMembers = [
     description:
       'I help align marketing growth plans with sales goals, ensuring each campaign is designed to create qualified leads and long-term customer relationships.',
     image: '/team/Kush.jpg',
+    linkedin: 'https://www.linkedin.com/in/kushagrasingh',
   },
   {
     name: 'Shweta Mishra',
@@ -26,6 +28,7 @@ const teamMembers = [
     description:
       'I drive execution across teams and ensure our growth systems are efficient, scalable, and optimised for manufacturing and industrial marketing outcomes.',
     image: '/team/shweta.jpg',
+    linkedin: 'https://www.linkedin.com/in/shwetamishra',
   },
   {
     name: 'Manjeet Kumar',
@@ -166,7 +169,7 @@ export default function TeamSection() {
         <div className="grid sm:m-10 gap-6 lg:grid-cols-[0.8fr_1.2fr] shadow-2xl rounded-[32px]">
           <div className="rounded-[32px] p-6 text-center text-black sm:py-12">
             <div className="m-auto max-w-[260px] overflow-hidden rounded-full border-1 border-white/6 p-1">
-              <img src={activeMember.image} alt={activeMember.name} className="h-auto w-[260px] rounded-full object-cover" />
+              <img src={activeMember.image} alt={activeMember.name} className="h-[260px] w-[260px] rounded-full object-cover" />
             </div>
             <div className="mt-8 space-y-2">
               {/* <p className="text-sm uppercase tracking-[0.3em] text-black">{activeMember.badge}</p> */}
@@ -188,12 +191,16 @@ export default function TeamSection() {
               {activeMember.description}
             </em>
             </p>
-            <button
-              type="button"
-              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-sky-500 px-6 py-4 text-base font-semibold text-white transition hover:bg-sky-600"
-            >
-              Connect on Linkedin
-            </button>
+            {activeMember.linkedin && (
+              <a
+                href={activeMember.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center justify-center rounded-2xl bg-sky-500 px-6 py-4 text-base font-semibold text-white transition hover:bg-sky-600"
+              >
+                Connect on Linkedin
+              </a>
+            )}
           </div>
         </div>
       </div>

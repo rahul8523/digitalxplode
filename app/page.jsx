@@ -12,7 +12,7 @@ export default function Home() {
   const practitionerItems = [
     {
       title: 'Traditional SEO Foundation',
-      color: 'bg-orange-500 text-orange-800',
+      color: 'bg-yellow-200 text-yellow-700',
       icon: (
         <img src="/icons/searchse.png" alt="SEO" className="w-5" />
       ),
@@ -22,9 +22,9 @@ export default function Home() {
     },
     {
       title: 'AEO (Answer Engine Optimization)',
-      color: 'bg-yellow-500 text-yellow-800',
+      color: 'bg-orange-200 text-orange-700',
       icon: (
-        <img src="/icons/searchse.png" alt="SEO" className="w-5" />
+        <img src="/icons/Shape6.png" alt="SEO" className="w-5" />
       ),
       points: [
         'Search Intent Mapping',
@@ -34,9 +34,9 @@ export default function Home() {
     },
     {
       title: 'GEO (Generative Engine Optimization)',
-      color: 'bg-amber-500 text-amber-800',
+      color: 'bg-lime-200 text-lime-700',
       icon: (
-        <img src="/icons/searchse.png" alt="SEO" className="w-5" />
+        <img src="/icons/Shape7.png" alt="SEO" className="w-5" />
       ),
       points: [
         'AI Content Strategy',
@@ -46,9 +46,9 @@ export default function Home() {
     },
     {
       title: 'AIO (AI Optimization)',
-      color: 'bg-emerald-600 text-emerald-800',
+      color: 'bg-green-200 text-green-700',
       icon: (
-        <img src="/icons/searchse.png" alt="SEO" className="w-5" />
+        <img src="/icons/Shape8.png" alt="SEO" className="w-5" />
       ),
       points: [
         'AI-assisted Campaign Analytics',
@@ -57,10 +57,10 @@ export default function Home() {
       ],
     },
     {
-      title: 'Outcome-Focused Version',
-      color: 'bg-teal-500 text-teal-800',
+      title: 'Outcome-Focused Version (Better for Landing Pages)',
+      color: 'bg-sky-200 text-sky-700',
       icon: (
-        <img src="/icons/searchse.png" alt="SEO" className="w-5" />
+        <img src="/icons/Shape9.png" alt="SEO" className="w-5" />
       ),
       points: [
         'Landing Page Conversion Design',
@@ -68,6 +68,71 @@ export default function Home() {
         'ROI-first Execution',
       ],
     },
+
+    {
+      title: 'Performance Marketing',
+      color: 'bg-pink-200 text-pink-700',
+      icon: (
+        <img src="/icons/Shape10.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Landing Page Conversion Design',
+        'Goal-driven Campaign Framework',
+        'ROI-first Execution',
+      ],
+    },
+
+
+    {
+      title: 'Linkedin Marketing',
+      color: 'bg-purple-200 text-purple-700',
+      icon: (
+        <img src="/icons/Shape11.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Landing Page Conversion Design',
+        'Goal-driven Campaign Framework',
+        'ROI-first Execution',
+      ],
+    },
+
+    {
+      title: 'Industrial Content Marketing',
+      color: 'bg-rose-200 text-rose-700',
+      icon: (
+        <img src="/icons/Shape12.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Landing Page Conversion Design',
+        'Goal-driven Campaign Framework',
+        'ROI-first Execution',
+      ],
+    },
+    {
+      title: 'Social Media for Manufacturing Brands',
+      color: 'bg-indigo-200 text-indigo-700',
+      icon: (
+        <img src="/icons/Shape13.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Landing Page Conversion Design',
+        'Goal-driven Campaign Framework',
+        'ROI-first Execution',
+      ],
+    },
+    {
+      title: 'Website Design & Conversion Optimization',
+      color: 'bg-teal-200 text-teal-700',
+      icon: (
+        <img src="/icons/Shape14.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Landing Page Conversion Design',
+        'Goal-driven Campaign Framework',
+        'ROI-first Execution',
+      ],
+    },
+
   ];
 
   return (
@@ -84,11 +149,11 @@ export default function Home() {
                 <span className="inline-flex h-2.5 w-2.5 rounded-full bg-sky-500" />
                 10+ Years Experience
               </div>
-              <div className="space-y-4">
-                <h1 className="text-4xl font-medium leading-[1.02] pt-2 tracking-[-0.03em] text-sky-400 sm:text-[3.0rem]">
+              <div className="space-y-2">
+                <h1 className="text-4xl font-medium leading-[1.02] pt-2 tracking-[-0.03em] text-sky-400 sm:text-[2.5rem]">
                   Grow Your Manufacturing Business
                 </h1>
-                <h2 className="text-4xl font-medium leading-[1.02] pt-0 mt-0 tracking-[-0.03em] text-slate-900 sm:text-[3.0rem]">
+                <h2 className="text-4xl font-medium leading-[1.02] pt-0 mt-0 tracking-[-0.03em] text-slate-900 sm:text-[2.5rem]">
                   with Data-Driven Digital Marketing
                 </h2>
               </div>
@@ -158,10 +223,10 @@ export default function Home() {
               </div>
             </div>
 
-            <aside className="rounded-[32px] text-center bg-white shadow-xl ring-1 ring-slate-200/60">
-              <div className="rounded-t-[22px] bg-sky-400 px-8 py-8 text-white">
+            <aside className="rounded-[12px] text-center bg-white shadow-xl ring-1 ring-slate-200/60">
+              <div className="rounded-t-[12px] text-left bg-sky-400 px-6 py-6 text-white">
                 <p className="text-2xl font-semibold text-sky-100/90">Get the Complete Details</p>
-                <h3 className="mt-4 text-xl mt-0 font-medium text-black">About the Services</h3>
+                <h3 className="mt-2 text-xl mt-0 font-medium text-black">About the Services</h3>
               </div>
               <div className="space-y-5 px-8 py-8">
                 <form className="space-y-4">
@@ -197,8 +262,8 @@ export default function Home() {
                       className="mt-2 w-full border-b border-slate-300 bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none"
                     />
                   </label>
-                  <label className="flex items-start gap-3 text-sm text-slate-600 items-center">
-                    <input type="checkbox" className="mt-2 h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500" />
+                  <label className="flex items-start gap-3 py-3 text-xs text-slate-600 text-left items-center">
+                    <input type="checkbox" className="mt-0 h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500" />
                     I agree to the Terms & Conditions and Privacy Policy.
                   </label>
                   <button
@@ -230,18 +295,18 @@ export default function Home() {
             </div>
             <div className="space-y-5 nt-5 sm:mt-20">
               {practitionerItems.map((item, index) => (
-                <div key={item.title} className={`overflow-hidden rounded-[28px] border bg-slate-50 ${openIndex === index ? 'border-sky-300' : 'border-slate-200'}`}>
+                <div key={item.title} className={`overflow-hidden rounded-[12px] border bg-slate-50 ${openIndex === index ? 'border-sky-300' : 'border-slate-200'}`}>
                   <button
                     type="button"
                     onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                    className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                    className="flex w-full items-center justify-between gap-4 px-4 py-2 text-left"
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`flex h-14 w-14 items-center justify-center rounded-lg ${item.color}`}>
+                      <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${item.color}`}>
                         {item.icon}
                       </div>
                       <div>
-                        <p className={`text-2xl font-medium ${openIndex === index ? 'text-sky-400' : 'text-slate-900'}`}>{item.title}</p>
+                        <p className={`text-xl font-medium ${openIndex === index ? 'text-sky-400' : 'text-slate-900'}`}>{item.title}</p>
                         {/* <p className="mt-1 text-sm text-slate-500">{item.subtitle}</p> */}
                       </div>
                     </div>
