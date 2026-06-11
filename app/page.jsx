@@ -454,8 +454,8 @@ export default function Home() {
         <FAQ />
       </main>
 
-      <div className="fixed inset-x-0 bottom-0 z-50 px-0 sm:pb-4 sm:px-6">
-        <div className="mx-auto flex max-w-[1240px] flex-col gap-2 sm:rounded-[12px] border border-slate-700/70 bg-slate-950/95 px-2 py-3 shadow-xl shadow-slate-950/30 backdrop-blur-xl sm:flex-row sm:items-center sm:justify-between sm:px-5 sm:py-4">
+      <div className="fixed inset-x-0 bottom-0 z-40 px-0 sm:pb-4 sm:px-6">
+        <div className="mx-auto flex max-w-[1240px] flex-col gap-2 sm:rounded-[12px] border border-slate-700/70 bg-black px-2 py-3 shadow-xl shadow-slate-950/30 backdrop-blur-xl sm:flex-row sm:items-center sm:justify-between sm:px-5 sm:py-4">
           <div className="hidden sm:block min-w-0">
             <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">Need help right now?</p>
             <p className="mt-1 text-sm font-semibold text-white sm:text-base">Reach us instantly via call, WhatsApp, or enquiry</p>
