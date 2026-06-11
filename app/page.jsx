@@ -17,7 +17,11 @@ export default function Home() {
         <img src="/icons/searchse.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Traditional SEO Foundation refers to the core practices used to improve a website’s visibility in search engines through strong on-page, technical, and content optimization. It focuses on creating a solid structure that helps search engines understand, crawl, and rank pages effectively.',
+        'Keyword research for manufacturing search terms that attract qualified buyers and decision-makers.',
+        'Technical SEO improvements for crawlability, site speed, and stable indexation across product pages.',
+        'On-page optimisation focused on service pages, product details, and industrial search queries.',
+        'Content structure that helps search engines understand your site and improves user experience.',
+        'Ongoing reporting and refinement to maintain rankings while competition and demand shift.',
       ],
     },
     {
@@ -27,9 +31,11 @@ export default function Home() {
         <img src="/icons/Shape6.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Search Intent Mapping',
-        'Schema & Featured Snippets',
-        'Voice Search Readiness',
+        'Mapping buyer intent to the exact questions customers ask before choosing industrial solutions.',
+        'Implementing schema and rich results that make your pages more visible in search listings.',
+        'Optimising content for voice and answer-driven search queries on mobile and assistants.',
+        'Creating question-and-answer content that positions your site as the best answer source.',
+        'Aligning FAQ, guide, and service page copy with what search engines reward for answers.',
       ],
     },
     {
@@ -39,9 +45,11 @@ export default function Home() {
         <img src="/icons/Shape7.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'AI Content Strategy',
-        'Generative Keyword Targeting',
-        'Content Automation Checks',
+        'Using AI to generate content ideas that match emerging manufacturing search trends.',
+        'Targeting generative keywords for product features, applications, and technical use cases.',
+        'Automating content quality checks while keeping the brand voice consistent and professional.',
+        'Scaling relevant content creation without losing focus on industry expertise and clarity.',
+        'Leveraging AI insights to capture demand from competitive gaps and niche searches.',
       ],
     },
     {
@@ -51,9 +59,11 @@ export default function Home() {
         <img src="/icons/Shape8.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'AI-assisted Campaign Analytics',
-        'Intent-aligned Messaging',
-        'Performance Signal Optimization',
+        'AI-driven analytics to identify campaign opportunities and optimise performance faster.',
+        'Crafting intent-based messaging that resonates with manufacturing buyers at every stage.',
+        'Tuning ad and page signals based on real behaviour and predictive performance data.',
+        'Testing creative variations with AI feedback to improve engagement and conversion rates.',
+        'Tracking the strongest signals that drive leads and business outcomes in industrial markets.',
       ],
     },
     {
@@ -63,12 +73,13 @@ export default function Home() {
         <img src="/icons/Shape9.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Landing page design built for conversion with clear calls to action and buyer-focused messaging.',
+        'Campaign structure that prioritises leads, meetings, and sales outcomes instead of clicks.',
+        'Optimising page flow so visitors reach enquiry points quickly and confidently.',
+        'Aligning headlines, benefits, and proof elements around the customer’s purchase intent.',
+        'Measuring success based on enquiries, pipeline impact, and revenue potential.',
       ],
     },
-
     {
       title: 'Performance Marketing',
       color: 'bg-pink-200 text-pink-700',
@@ -76,13 +87,13 @@ export default function Home() {
         <img src="/icons/Shape10.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Building full-funnel campaigns focused on more leads with lower cost per acquisition.',
+        'Targeting industrial buyers, procurement teams, and engineering decision-makers precisely.',
+        'Optimising ads and creative for better click-through rates and qualified responses.',
+        'Supporting landing pages and forms so traffic converts into real enquiries.',
+        'Refining campaigns continuously based on lead quality, conversion rates, and ROI.',
       ],
     },
-
-
     {
       title: 'Linkedin Marketing',
       color: 'bg-purple-200 text-purple-700',
@@ -90,12 +101,13 @@ export default function Home() {
         <img src="/icons/Shape11.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Reaching manufacturing buyers and industry professionals through LinkedIn targeting.',
+        'Creating sponsored content and outreach that positions your brand as a trusted partner.',
+        'Segmenting audiences by role, company, and industry for better lead relevance.',
+        'Optimising company page and campaign copy to support B2B credibility.',
+        'Tracking leads and interactions with LinkedIn conversion forms and engagement metrics.',
       ],
     },
-
     {
       title: 'Industrial Content Marketing',
       color: 'bg-rose-200 text-rose-700',
@@ -103,9 +115,11 @@ export default function Home() {
         <img src="/icons/Shape12.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Creating technical content that explains your products and builds trust with buyers.',
+        'Publishing case studies, product guides, and industry thought leadership for credibility.',
+        'Crafting copy that appeals to procurement, engineering, and operations audiences.',
+        'Aligning content to search intent for industrial buyers at each stage of research.',
+        'Keeping content consistent across website, social, and sales enablement channels.',
       ],
     },
     {
@@ -115,9 +129,11 @@ export default function Home() {
         <img src="/icons/Shape13.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Showing your manufacturing brand consistently across social platforms with strong visuals.',
+        'Sharing product stories, customer success cases, and industry expertise for credibility.',
+        'Engaging buyers and partners through targeted content and community interaction.',
+        'Using LinkedIn, Facebook, and Instagram to support lead generation and brand reach.',
+        'Measuring social engagement, follower growth, and enquiry interest from campaigns.',
       ],
     },
     {
@@ -127,16 +143,90 @@ export default function Home() {
         <img src="/icons/Shape14.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing Page Conversion Design',
-        'Goal-driven Campaign Framework',
-        'ROI-first Execution',
+        'Designing websites that look professional and build credibility for manufacturing brands.',
+        'Optimising conversion points so visitors can easily request quotes or contact sales.',
+        'Structuring pages around product discovery, benefits, and buyer trust signals.',
+        'Ensuring mobile and desktop experiences are fast, clear, and easy to use.',
+        'Testing and improving the site based on visitor behaviour and enquiry performance.',
       ],
     },
-
   ];
 
+  const [formData, setFormData] = useState({
+    companyName: '',
+    name: '',
+    email: '',
+    contact: '',
+    agree: false,
+  });
+  const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState({ loading: false, message: '', type: '' });
+
+  const validateEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  const validateIndianMobile = (value) => /^[6-9]\d{9}$/.test(value);
+
+  const validateForm = () => {
+    const nextErrors = {};
+
+    if (!formData.companyName.trim()) {
+      nextErrors.companyName = 'Company name is required.';
+    }
+    if (!formData.name.trim()) {
+      nextErrors.name = 'Your name is required.';
+    }
+    if (!validateEmail(formData.email)) {
+      nextErrors.email = 'Please enter a valid email address.';
+    }
+    if (!validateIndianMobile(formData.contact)) {
+      nextErrors.contact = 'Enter a valid 10-digit Indian mobile number.';
+    }
+    if (!formData.agree) {
+      nextErrors.agree = 'You must agree to the Terms & Conditions and Privacy Policy.';
+    }
+
+    setErrors(nextErrors);
+    return Object.keys(nextErrors).length === 0;
+  };
+
+  const handleChange = (field, value) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+    setErrors((prev) => ({ ...prev, [field]: undefined }));
+    setStatus({ loading: false, message: '', type: '' });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!validateForm()) {
+      setStatus({ loading: false, message: 'Please fix the highlighted fields before submitting.', type: 'error' });
+      return;
+    }
+
+    setStatus({ loading: true, message: 'Sending your request...', type: 'info' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message.');
+      }
+
+      setStatus({ loading: false, message: result.message || 'Your request has been sent successfully.', type: 'success' });
+      setFormData({ companyName: '', name: '', email: '', contact: '', agree: false });
+      setErrors({});
+    } catch (error) {
+      setStatus({ loading: false, message: error.message || 'Unable to send the message right now.', type: 'error' });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] text-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] text-slate-950 pb-28">
       <Header />
 
 
@@ -223,58 +313,85 @@ export default function Home() {
               </div>
             </div>
 
-            <aside className="rounded-[12px] text-center bg-white shadow-xl ring-1 ring-slate-200/60">
+            <aside className="rounded-[12px] text-center bg-white shadow-xl ring-1 ring-slate-200/60" id="contact">
               <div className="rounded-t-[12px] text-left bg-sky-400 px-6 py-6 text-white">
                 <p className="text-2xl font-semibold text-sky-100/90">Get the Complete Details</p>
                 <h3 className="mt-2 text-xl mt-0 font-medium text-black">About the Services</h3>
               </div>
-              <div className="space-y-5 px-8 py-8">
-                <form className="space-y-4">
-                  <label className="block text-base  font-semibold text-slate-700">
+              <div className="space-y-5 px-8 py-8" >
+                <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+                  <label className="block text-sm font-semibold text-slate-700">
+                    <input
+                      type="text"
+                      placeholder="Company Name"
+                      value={formData.companyName}
+                      onChange={(event) => handleChange('companyName', event.target.value)}
+                      className={`mt-2 w-full border-b bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none ${errors.companyName ? 'border-rose-500' : 'border-slate-300'}`}
+                    />
+                    {errors.companyName && <p className="mt-2 text-xs text-rose-600">{errors.companyName}</p>}
+                  </label>
 
+                  <label className="block text-sm font-semibold text-slate-700">
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className="mt-2 w-full border-b border-slate-300 bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none"
+                      value={formData.name}
+                      onChange={(event) => handleChange('name', event.target.value)}
+                      className={`mt-2 w-full border-b bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none ${errors.name ? 'border-rose-500' : 'border-slate-300'}`}
                     />
+                    {errors.name && <p className="mt-2 text-xs text-rose-600">{errors.name}</p>}
                   </label>
-                  <label className="block text-sm font-semibold text-slate-700">
 
+                  <label className="block text-sm font-semibold text-slate-700">
                     <input
                       type="email"
                       placeholder="Email Address"
-                      className="mt-2 w-full border-b border-slate-300 bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none"
+                      value={formData.email}
+                      onChange={(event) => handleChange('email', event.target.value)}
+                      className={`mt-2 w-full border-b bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none ${errors.email ? 'border-rose-500' : 'border-slate-300'}`}
                     />
+                    {errors.email && <p className="mt-2 text-xs text-rose-600">{errors.email}</p>}
                   </label>
-                  <label className="block text-sm font-semibold text-slate-700">
 
+                  <label className="block text-sm font-semibold text-slate-700">
                     <input
                       type="tel"
+                      inputMode="numeric"
                       placeholder="Contact no"
-                      className="mt-2 w-full border-b border-slate-300 bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none"
+                      value={formData.contact}
+                      onChange={(event) => handleChange('contact', event.target.value.replace(/[^0-9]/g, ''))}
+                      className={`mt-2 w-full border-b bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none ${errors.contact ? 'border-rose-500' : 'border-slate-300'}`}
                     />
+                    {errors.contact && <p className="mt-2 text-xs text-rose-600">{errors.contact}</p>}
                   </label>
-                  <label className="block text-sm font-semibold text-slate-700">
 
+                  <label className="flex items-start gap-3 py-3 text-xs text-slate-600 text-left">
                     <input
-                      type="text"
-                      placeholder="location"
-                      className="mt-2 w-full border-b border-slate-300 bg-transparent py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none"
+                      type="checkbox"
+                      checked={formData.agree}
+                      onChange={(event) => handleChange('agree', event.target.checked)}
+                      className="mt-0 h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500"
                     />
+                    <span>I agree to the Terms & Conditions and Privacy Policy.</span>
                   </label>
-                  <label className="flex items-start gap-3 py-3 text-xs text-slate-600 text-left items-center">
-                    <input type="checkbox" className="mt-0 h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500" />
-                    I agree to the Terms & Conditions and Privacy Policy.
-                  </label>
+                  {errors.agree && <p className="text-xs text-rose-600">{errors.agree}</p>}
+
                   <button
                     type="submit"
-                    className="mt-3 w-full rounded-2xl bg-sky-500 px-4 py-3 text-base font-semibold text-white transition hover:bg-sky-600"
+                    disabled={status.loading}
+                    className={`mt-3 w-full rounded-2xl px-4 py-3 text-base font-semibold text-white transition ${status.loading ? 'bg-slate-400' : 'bg-sky-500 hover:bg-sky-600'}`}
                   >
-                    Submit
+                    {status.loading ? 'Sending...' : 'Submit'}
                   </button>
+
+                  {status.message && (
+                    <p className={`mt-3 text-sm ${status.type === 'error' ? 'text-rose-600' : status.type === 'success' ? 'text-emerald-700' : 'text-slate-700'}`}>
+                      {status.message}
+                    </p>
+                  )}
                 </form>
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/+919971791782"
                   className="inline-flex items-center justify-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
                 >
                   <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-600 text-white">✓</span>
@@ -320,7 +437,7 @@ export default function Home() {
                     <div className="space-y-3 px-8 text-sm text-slate-700">
                       {item.points.map((point) => (
                         <div key={point} className="flex items-start gap-3">
-                          {/* <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-500" /> */}
+                          <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-500" />
                           <p className="text-base text-slate-700">{point}</p>
                         </div>
                       ))}
@@ -336,6 +453,53 @@ export default function Home() {
         <TeamSection />
         <FAQ />
       </main>
+
+      <div className="fixed inset-x-0 bottom-0 z-50 px-0 sm:pb-4 sm:px-6">
+        <div className="mx-auto flex max-w-[1240px] flex-col gap-2 sm:rounded-[12px] border border-slate-700/70 bg-slate-950/95 px-2 py-3 shadow-xl shadow-slate-950/30 backdrop-blur-xl sm:flex-row sm:items-center sm:justify-between sm:px-5 sm:py-4">
+          <div className="hidden sm:block min-w-0">
+            <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">Need help right now?</p>
+            <p className="mt-1 text-sm font-semibold text-white sm:text-base">Reach us instantly via call, WhatsApp, or enquiry</p>
+          </div>
+          <div className="flex w-full items-center gap-2 overflow-x-auto pb-1 sm:w-auto sm:overflow-visible">
+            <a
+              href="tel:+919560785068"
+              className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] border border-slate-800 bg-sky-400/95 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-slate-900"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-sky-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 13 13 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 13 13 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              Call
+            </a>
+            <a
+              href="https://wa.me/919560785068?text=Hello%20Digital%20Xplode,%20I%20want%20to%20enquire%20about%20your%20services."
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] bg-emerald-500 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-emerald-600"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 8.5c.5 1.4.5 2.9 0 4.3a12 12 0 0 1-5.1 5.1 9.2 9.2 0 0 1-5.8 1.1 5 5 0 0 1-4.8-4.8 9.2 9.2 0 0 1 1.1-5.8 12 12 0 0 1 5.1-5.1 8.9 8.9 0 0 1 4.3 0l1.2.4 1.2.4c.4.1.6.4.7.7l.4 1.2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.5 6.5l-2.7 2.7m0 0a3 3 0 0 1-4.3 0 3 3 0 0 1 0-4.3 3 3 0 0 1 4.3 0z" />
+                </svg>
+              </span>
+              WhatsApp
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] bg-white px-3 sm:px-4 text-sm font-semibold text-slate-950 transition duration-200 hover:bg-slate-100"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </span>
+              Enquiry
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

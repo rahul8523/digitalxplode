@@ -7,8 +7,9 @@ const teamMembers = [
     name: 'Sudhanshu Arora',
     position: 'Founder and CEO',
     badge: 'Founder and CEO',
+    title: 'Leading growth for manufacturing brands with digital performance',
     description:
-      'In my sessions, I take learners through the journey of how I scaled IIM SKILLS to a major global ed-tech brand through performance marketing, SEO, and analytics, providing them with real insights.',
+      'I lead strategic growth plans, digital transformation and high-impact campaigns to make your brand more visible and credible. I ensure every initiative is measurable and aligned to business goals, delivering the right leads at the right time. This is how we turn growth into sustainable momentum.',
     image: '/team/CEO.png',
     linkedin: 'https://www.linkedin.com/in/sudhanshuarora',
   },
@@ -16,8 +17,9 @@ const teamMembers = [
     name: 'Kushagra Singh',
     position: 'Vice President',
     badge: 'Vice President',
+    title: 'Driving revenue growth through partnerships and conversion strategy',
     description:
-      'I help align marketing growth plans with sales goals, ensuring each campaign is designed to create qualified leads and long-term customer relationships.',
+      'I connect sales goals with marketing execution, creating campaigns that generate qualified leads and long-term customer relationships. I monitor performance closely and optimise every funnel for conversion. My focus is on revenue-driven marketing with measurable business impact.',
     image: '/team/Kush.jpg',
     linkedin: 'https://www.linkedin.com/in/kushagrasingh',
   },
@@ -25,8 +27,9 @@ const teamMembers = [
     name: 'Shweta Mishra',
     position: 'Head Operations',
     badge: 'Head Operations',
+    title: 'Ensuring flawless execution and scalable operations for every campaign',
     description:
-      'I drive execution across teams and ensure our growth systems are efficient, scalable, and optimised for manufacturing and industrial marketing outcomes.',
+      'I keep project delivery smooth by coordinating teams, systems, and timelines with precision. I make sure every campaign runs efficiently and every client promise is met without compromise. That means reliable execution and exceptional quality across the board.',
     image: '/team/shweta.jpg',
     linkedin: 'https://www.linkedin.com/in/shwetamishra',
   },
@@ -34,41 +37,136 @@ const teamMembers = [
     name: 'Manjeet Kumar',
     position: 'Creative Director',
     badge: 'Creative Director',
+    title: 'Crafting premium brand storytelling that builds trust and recognition',
     description:
-      'I build high-engagement digital campaigns and content systems that help industrial brands stay visible, trusted, and top-of-mind with decision-makers.',
+      'I design premium visual experiences that make your brand look modern, polished, and unforgettable. I translate your story into creative campaigns that build emotional trust and strong recognition. Every detail is crafted to elevate your brand presence online.',
     image: '/team/Manjeet.jpg',
   },
   {
     name: 'Hareesh Kumar',
     position: 'Ads Expert',
     badge: 'Ads Expert',
+    title: 'Building targeted ad funnels for better qualified leads',
     description:
-      'I design targeted ad strategies for Google, LinkedIn, and performance channels that reduce acquisition costs and improve lead quality for manufacturing businesses.',
+      'I create paid media strategies that focus on the right audience, not just clicks. I optimise ads continuously to lower spending and improve lead quality. The result is more efficient campaigns that bring real enquiries and business results.',
     image: '/team/Hareesh.jpg',
   },
   {
     name: 'Tilak Gautam',
     position: 'Sr. Web Developer',
     badge: 'Sr. Web Developer',
+    title: 'Developing fast conversion websites that look premium and credible',
     description:
-      'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
+      'I build websites that load quickly, look premium, and guide visitors toward action. I focus on clean code, strong UX, and clear message hierarchy. This helps your brand capture attention and convert more visitors into customers.',
     image: '/team/tilak-n.jpg',
   },
   {
     name: 'Rahul Singh Chauhan',
     position: 'Full Stack Developer',
     badge: 'Full Stack Developer',
+    title: 'Implementing scalable full stack systems with secure UX',
     description:
-      'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
+      'I deliver reliable backend architecture and smooth frontend interfaces that work together seamlessly. I prioritise speed, security, and long-term maintainability. That means your platform performs well and evolves easily as your business grows.',
     image: '/team/Rahul-new.jpg',
   },
   {
     name: 'Shikha Kushwaha',
     position: 'Exec. Web Developer',
     badge: 'Executive Web Developer',
+    title: 'Delivering responsive web experiences that feel premium on every device',
     description:
-      'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
+      'I create responsive websites that look great on mobile, tablet, and desktop. I make sure every user interaction feels smooth and professional. This helps your audience trust your brand and stay engaged longer.',
     image: '/team/shikhaa.jpeg',
+  },
+  {
+    name: 'Aditya Sharma',
+    position: 'Ads Manager',
+    badge: 'Sr.Manager Google Adword',
+    title: 'Optimising paid campaigns for measurable traffic and growth',
+    description:
+      'I manage paid ad campaigns with a focus on ROI, testing creative and targeting for best performance. I use data to refine messaging, bids, and audience selection. That keeps campaigns efficient while generating more qualified enquiries.',
+    image: '/team/Aditya.png',
+  },
+  {
+    name: 'Pratima Jain',
+    position: 'Content Strategist',
+    badge: 'Strategy Specialist cum Content Writer',
+    title: 'Crafting content strategies that connect brand voice to customers',
+    description:
+      'I develop content plans that reflect your brand voice and speak directly to your ideal customers. I align messaging with customer needs to build trust and motivate action. The result is clear communication that supports sales and growth.',
+    image: '/team/Pratima.jpg',
+  },
+  {
+    name: 'Shubham Tiwari',
+    position: 'Sr. Social Strategist',
+    badge: 'Sr. Social Strategist | Digital Marketer',
+    title: 'Designing social campaigns that grow engagement and generate leads',
+    description:
+      'I build social media strategies that increase visibility and attract the right audience. I optimise post frequency, creative and messaging for higher engagement. This helps your brand generate interest and convert followers into customers.',
+    image: '/team/Shubham.jpg',
+  },
+  {
+    name: 'Vishal Singh',
+    position: 'Content Creator',
+    badge: 'Executive – Social Media Strategist cum Content Writer',
+    title: 'Producing digital content that boosts clarity and brand recall',
+    description:
+      'I create visual and written content that reflects your brand personality and resonates with your audience. I focus on clarity, consistency, and creativity for better recall. This makes your campaigns feel professional and memorable.',
+    image: '/team/Vishal.jpg',
+  },
+  {
+    name: 'Priyanshu',
+    position: 'Sr. Graphic Designer',
+    badge: 'Sr. Graphic Designer',
+    title: 'Designing premium visuals that elevate brand presence and impact',
+    description:
+      'I design premium graphics and visual assets that strengthen your brand identity. I ensure every design element supports your campaign message clearly. The outcome is polished creative that stands out in a crowded market.',
+    image: '/team/Priyanshu.jpg',
+  },
+  {
+    name: 'Shruti Verma',
+    position: 'Exec. Web Developer',
+    badge: 'Sr. Graphic Designer',
+    title: 'Building intuitive web interfaces that increase visitor conversions',
+    description:
+      'I create user-friendly website flows that make information easy to find and actions simple to take. I focus on clean layout, clear navigation, and faster conversion paths. This helps visitors feel confident and act quickly.',
+    image: '/team/Shruti.jpg',
+  },
+  {
+    name: 'Ankita Bisht',
+    position: 'Exec. Graphic Designer',
+    badge: 'Executive Graphic Designer',
+    title: 'Crafting polished visuals that strengthen brand identity and campaigns',
+    description:
+      'I produce polished visual content that keeps your brand consistent and memorable. I craft layouts that guide the viewer and support your marketing goals. The result is attractive design with a clear business purpose.',
+    image: '/team/Ankita.jpg',
+  },
+  {
+    name: 'Shivika Pandey',
+    position: 'Graphic & CRE',
+    badge: 'Graphic & Client Relationship Executive',
+    title: 'Combining design and messaging to strengthen client brand experiences',
+    description:
+      'I merge design quality with strong client messaging to build brand confidence and clarity. I help every creative asset speak to your customer’s needs. This makes your communication look smart, professional, and persuasive.',
+    image: '/team/Shivika.jpeg',
+  },
+  {
+    name: 'Navneet Pandey',
+    position: 'Exec. Graphic Designer',
+    badge: 'Executive Graphic Designer',
+    title: 'Creating campaign graphics that amplify visibility and attract customers',
+    description:
+      'I design campaign visuals that capture attention and support your business goals. I make sure the creative is bold, clear, and aligned with your message. That helps your brand attract the ideal customer every time.',
+    image: '/team/Navneet.jpg',
+  },
+  {
+    name: 'Shaista',
+    position: 'SEO Executive',
+    badge: 'SEO Executive',
+    title: 'Boosting search visibility with smart SEO and keyword optimisation',
+    description:
+      'I improve search visibility through smart keyword strategy, content optimisation, and technical SEO fixes. I help your website rank for the right searches and bring relevant traffic. The goal is more visibility, clicks, and qualified enquiries.',
+    image: '/team/Shaista.jpg',
   },
 ];
 
@@ -184,7 +282,7 @@ export default function TeamSection() {
               {activeMember.badge}
             </span>
             <h3 className="mt-6 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-              Learn Proven Performance Marketing Strategies
+              {activeMember.title}
             </h3>
             <p className="mt-5 text-lg font-semibold text-slate-900">
               <em>

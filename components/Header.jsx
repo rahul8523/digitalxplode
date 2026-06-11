@@ -10,7 +10,7 @@ export default function Header() {
       {/* Top Bar */}
       <div className="border-b border-slate-200 bg-gradient-to-r from-[#dcefff] via-white to-[#dcefff] hidden sm:block">
         <div className="mx-auto flex max-w-[1240px] items-center justify-end px-4 py-3 text-lg text-slate-900 sm:px-6">
-          <p>info@digitalxplode.com | support@digitalxplode.com</p>
+          <p><a href="mailto:info@digitalxplode.com" className="hover:text-slate-950">info@digitalxplode.com</a> | <a href="tel:9560785068" className="hover:text-slate-950">+91-956-07-85-068</a></p>
         </div>
       </div>
 
@@ -32,12 +32,54 @@ export default function Header() {
 
           {/* CTA Button & Mobile Menu */}
           <div className="flex items-center gap-4">
-            <button
-              type="button"
-              className="hidden rounded-lg border border-slate-600 bg-white px-6 py-2.5 text-base font-semibold text-slate-950 transition hover:bg-slate-50 md:inline-flex"
-            >
-              Let's Talk
-            </button>
+            <div className="hidden items-center gap-3 md:flex">
+              <a
+                href="https://www.linkedin.com/company/digitalxplode"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-sky-400"
+                aria-label="Digital Xplode on LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24V7h5v17H0zm7-17h4.8v2.4h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.1 3.4 6.1 7.8V24h-5V15.4c0-2.0 0-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24H7V7z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/DigitalXplode"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                aria-label="Digital Xplode on Facebook"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82V14.706h-3.13V11.07h3.13V8.413c0-3.1 1.894-4.788 4.658-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.716-1.795 1.763v2.312h3.587l-.467 3.637h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/digitalxplodeofficial"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                aria-label="Digital Xplode on Instagram"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/digital_xplode"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                aria-label="Digital Xplode on Twitter"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                  <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.94 4.94 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.958 13.958 0 011.671 3.149a4.92 4.92 0 001.523 6.573 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.085 4.928 4.928 0 004.6 3.417A9.865 9.865 0 010 19.54a13.936 13.936 0 007.548 2.212c9.057 0 14.01-7.507 14.01-14.01 0-.213-.005-.426-.014-.637A10.012 10.012 0 0024 4.557z" />
+                </svg>
+              </a>
+            </div>
             <button
               type="button"
               onClick={() => setMenuOpen(!menuOpen)}
