@@ -19,6 +19,10 @@ const faqs = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
+  const columns = [[], []];
+  faqs.forEach((faq, index) => {
+    columns[index % 2].push({ faq, index });
+  });
 
   return (
     <section className="mx-auto max-w-[1240px] px-4 py-12">
@@ -27,28 +31,32 @@ export default function FAQ() {
         <p className="mt-2 text-slate-600">Clear your doubts about lead generation, industrial branding, and ROI-driven marketing.</p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {faqs.map((f, i) => (
-          <div key={i} className="rounded-[12px] border border-slate-200 bg-white p-5">
-            <button
-              type="button"
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex items-center justify-between gap-4 text-left"
-            >
-              <div className="flex items-center gap-5">
-                <span className="h-2.5 w-2.5 rounded-full bg-slate-900" />
-                <span className="text-base font-medium text-slate-900">{f.q}</span>
-              </div>
-              <div className={`transition-transform ${openIndex === i ? "rotate-45" : "rotate-0"}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5 text-slate-500">
-                  <path fill="currentColor" d="M12 5v14M5 12h14" />
-                </svg>
-              </div>
-            </button>
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
+        {columns.map((column, colIndex) => (
+          <div key={colIndex} className="space-y-4">
+            {column.map(({ faq, index }) => (
+              <div key={index} className="rounded-[12px] border border-slate-200 bg-white p-5">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  className="w-full flex items-center justify-between gap-4 text-left"
+                >
+                  <div className="flex items-center gap-5">
+                    <span className="h-2.5 w-2.5 rounded-full bg-slate-900" />
+                    <span className="text-base font-medium text-slate-900">{faq.q}</span>
+                  </div>
+                  <div className={`transition-transform ${openIndex === index ? "rotate-45" : "rotate-0"}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5 text-slate-500">
+                      <path fill="currentColor" d="M12 5v14M5 12h14" />
+                    </svg>
+                  </div>
+                </button>
 
-            <div className={`mt-3 p-5 text-base text-slate-700 ${openIndex === i ? "block" : "hidden"}`}>
-              {f.a}
-            </div>
+                <div className={`mt-3 p-5 text-base text-slate-700 ${openIndex === index ? "block" : "hidden"}`}>
+                  {faq.a}
+                </div>
+              </div>
+            ))}
           </div>
         ))}
       </div>

@@ -27,16 +27,18 @@ export default function Footer() {
 
           <div className="border-t mt-10 border-slate-200 pt-6 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-400">Address</p>
-            <p className="text-white mt-3 sm:mt-10 text-base leading-8 text-slate-900">
+             <img src="/contact/flag.jpg" alt="Digital Xplode" className="mt-4 h-10 w-auto" />
+            <p className="text-white mt-2 text-base leading-8 text-slate-900">
               C-50 G/03, Sector 6, Noida, Uttar Pradesh 201301 India
             </p>
           </div>
 
           <div className="w-full border-t sm:mt-10 border-slate-200 pt-6 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-400">Contact</p>
-            <div className="text-base leading-8 mt-3 sm:mt-10 text-slate-900">
+            <div className="text-base leading-8 mt-4 text-slate-900">
               <div>
-                <p className="font-semibold text-sky-400">IND: <a href="tel:+919560785068" className="text-slate-900 transition hover:text-sky-600 text-white">+91-956-078-5068</a></p>
+                <img src="/contact/call.png" alt="Digital Xplode" className="h-12 w-auto" />
+                <p className="font-semibold text-sky-400 mt-2">IND: <a href="tel:+919971068400" className="text-slate-900 transition hover:text-sky-600 text-white">+91-997-10-68400</a></p>
               </div>
               <div>
                 <p className="font-semibold text-sky-400">Enquiry: <a href="mailto:info@digitalxplode.com" className="text-slate-900 transition hover:text-sky-600 text-white">info@digitalxplode.com</a></p>

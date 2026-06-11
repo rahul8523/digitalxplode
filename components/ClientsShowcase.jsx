@@ -1,31 +1,22 @@
 export default function ClientsShowcase() {
   const clientLogos = [
-    '/clientlogo/client1.png',
-    '/clientlogo/client2.png',
-    '/clientlogo/client3.png',
-    '/clientlogo/client4.png',
-    '/clientlogo/client5.png',
-    '/clientlogo/client6.png',
-    '/clientlogo/client7.png',
-    '/clientlogo/client8.png',
-    '/clientlogo/client9.png',
-    '/clientlogo/client10.png',
-    '/clientlogo/client11.png',
+    '/manufacturer/client-logo/alstoneindia.png',
+    '/manufacturer/client-logo/argentium.png',
+    '/manufacturer/client-logo/foreverkidz.png',
+    '/manufacturer/client-logo/Hikon.png',
+    '/manufacturer/client-logo/pms.png',
+    '/manufacturer/client-logo/starline.avif',
+    '/manufacturer/client-logo/touchofindia.png',
+    '/manufacturer/client-logo/mechfox.png',
   ];
 
   const layerLogos = [
-    '/clientlogo/Layer11.png',
-    '/clientlogo/Layer12.png',
-    '/clientlogo/Layer13.png',
-    '/clientlogo/Layer14.png',
-    '/clientlogo/Layer15.png',
-    '/clientlogo/Layer16.png',
-    '/clientlogo/Layer17.png',
-    '/clientlogo/Layer18.png',
-    '/clientlogo/Layer19.png',
-    '/clientlogo/Layer20.png',
-    '/clientlogo/Layer21.png',
-    '/clientlogo/Layer22.png',
+    '/manufacturer/client-logo/Layer11.png',
+    '/manufacturer/client-logo/Layer12.png',
+    '/manufacturer/client-logo/KNEngineering.png',
+    '/manufacturer/client-logo/sankon.png',
+    '/manufacturer/client-logo/web-logo.webp',
+    '/manufacturer/client-logo/sodhisons.png',
   ];
 
   return (
@@ -68,7 +59,12 @@ export default function ClientsShowcase() {
             <div className="marquee marquee-reverse min-w-[200%] flex items-center gap-6 px-6 py-6">
               {[...clientLogos, ...clientLogos].map((src, i) => (
                 <div key={i} className="flex-shrink-0 rounded-[12px] bg-white overflow-hidden border bg-slate-50 p-4 border-sky-300">
-                  <img src={src} alt={`Client ${i + 1}`} className="h-[50px] w-[180px] object-contain" />
+                  <img
+                    src={src}
+                    alt={`Client ${i + 1}`}
+                    className="h-[50px] w-[180px] object-contain"
+                    style={{ filter: src === clientLogos[clientLogos.length - 1] ? 'invert(1)' : 'none' }}
+                  />
                 </div>
               ))}
             </div>

@@ -11,145 +11,120 @@ export default function Home() {
   const [openIndex, setOpenIndex] = useState(0);
   const practitionerItems = [
     {
-      title: 'Traditional SEO Foundation',
-      color: 'bg-yellow-200 text-yellow-700',
+      title: 'Search & Answer Engine Dominance (SEO & AEO)',
+      color: 'bg-orange-200 text-orange-700',
       icon: (
         <img src="/icons/searchse.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Keyword research for manufacturing search terms that attract qualified buyers and decision-makers.',
-        'Technical SEO improvements for crawlability, site speed, and stable indexation across product pages.',
-        'On-page optimisation focused on service pages, product details, and industrial search queries.',
-        'Content structure that helps search engines understand your site and improves user experience.',
-        'Ongoing reporting and refinement to maintain rankings while competition and demand shift.',
+        'Capture high-intent B2B buyers at the exact moment of intent. Through technical SEO, targeted content clusters, and AEO strategy, we position your business as the undisputed authority across traditional search and modern AI answer engines.',
+       'Technical SEO',
+       'Schema Data',
+       'AI Answer Engine Visibility',
+       'Local & Global Search Authority',
       ],
     },
     {
-      title: 'AEO (Answer Engine Optimization)',
-      color: 'bg-orange-200 text-orange-700',
-      icon: (
-        <img src="/icons/Shape6.png" alt="SEO" className="w-5" />
-      ),
-      points: [
-        'Mapping buyer intent to the exact questions customers ask before choosing industrial solutions.',
-        'Implementing schema and rich results that make your pages more visible in search listings.',
-        'Optimising content for voice and answer-driven search queries on mobile and assistants.',
-        'Creating question-and-answer content that positions your site as the best answer source.',
-        'Aligning FAQ, guide, and service page copy with what search engines reward for answers.',
-      ],
-    },
-    {
-      title: 'GEO (Generative Engine Optimization)',
+      title: 'Generative Engine Optimization (GEO)',
       color: 'bg-lime-200 text-lime-700',
       icon: (
-        <img src="/icons/Shape7.png" alt="SEO" className="w-5" />
+        <img src="/icons/optimization.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Using AI to generate content ideas that match emerging manufacturing search trends.',
-        'Targeting generative keywords for product features, applications, and technical use cases.',
-        'Automating content quality checks while keeping the brand voice consistent and professional.',
-        'Scaling relevant content creation without losing focus on industry expertise and clarity.',
-        'Leveraging AI insights to capture demand from competitive gaps and niche searches.',
+        'Secure your brands presence inside AI-generated summaries. We strategically optimize your content layout, data structure, and citations to ensure your business is actively cited, synthesized, and recommended by modern generative AI platforms.',
+        'Optimizing for the AI era. We engineer your online presence to guarantee visibility within generative search results, driving brand inclusion and citations across the world’s leading LLMs and AI platforms.',
+        'Generative Citation Mapping',
+        'LLM Sentiment Alignment',
+        'Structured Data Enrichment',
+        'Authority Source Network'
       ],
     },
     {
-      title: 'AIO (AI Optimization)',
+      title: 'AI Optimization (AIO)',
+      color: 'bg-green-200 text-green-700',
+      icon: (
+        <img src="/icons/ai.png" alt="SEO" className="w-5" />
+      ),
+      points: [
+        'Future-proof your entire digital infrastructure by Engineering data for the AI landscape. We optimize your website architecture, schema data, and content networks to ensure your enterprise is seamlessly indexed, correctly interpreted, and prioritized by AI models and autonomous agents.',
+        'AI Crawler & Bot Management',
+        'Knowledge Graph Integration',
+        'Vector-Search Optimization',
+        'Semantic Data Architecture',
+      ],
+    },
+    {
+      title: 'Performance Marketing & B2B Lead Generation',
       color: 'bg-green-200 text-green-700',
       icon: (
         <img src="/icons/Shape8.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'AI-driven analytics to identify campaign opportunities and optimise performance faster.',
-        'Crafting intent-based messaging that resonates with manufacturing buyers at every stage.',
-        'Tuning ad and page signals based on real behaviour and predictive performance data.',
-        'Testing creative variations with AI feedback to improve engagement and conversion rates.',
-        'Tracking the strongest signals that drive leads and business outcomes in industrial markets.',
+        'Turn ad spend into predictable revenue pipeline. We design hyper-targeted, multi-channel paid campaigns engineered to reach corporate decision-makers, nurture high-intent prospects, and deliver sales-qualified leads to your team.',
+        'Account-Based Marketing (ABM)',
+        'High-Intent PPC',
+        'LinkedIn Advertising',
+        'Sales Pipeline Velocity.',
       ],
     },
     {
-      title: 'Outcome-Focused Version (Better for Landing Pages)',
+      title: 'LinkedIn Marketing & Corporate Branding',
       color: 'bg-sky-200 text-sky-700',
       icon: (
         <img src="/icons/Shape9.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Landing page design built for conversion with clear calls to action and buyer-focused messaging.',
-        'Campaign structure that prioritises leads, meetings, and sales outcomes instead of clicks.',
-        'Optimising page flow so visitors reach enquiry points quickly and confidently.',
-        'Aligning headlines, benefits, and proof elements around the customer’s purchase intent.',
-        'Measuring success based on enquiries, pipeline impact, and revenue potential.',
+        'Penetrate target accounts and bypass the gatekeepers. We architect comprehensive LinkedIn strategies that align organic content with targeted outreach, putting your value proposition directly in front of CXOs, VPs, and key industry stakeholders.',
+        'Decision-Maker Targeting',
+        'Paid InMail Campaigns',
+        'Content Amplification',
+        'High-Value Lead Capture',
       ],
     },
     {
-      title: 'Performance Marketing',
+      title: 'Industrial Content Strategy & Lead Gen',
       color: 'bg-pink-200 text-pink-700',
       icon: (
         <img src="/icons/Shape10.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Building full-funnel campaigns focused on more leads with lower cost per acquisition.',
-        'Targeting industrial buyers, procurement teams, and engineering decision-makers precisely.',
-        'Optimising ads and creative for better click-through rates and qualified responses.',
-        'Supporting landing pages and forms so traffic converts into real enquiries.',
-        'Refining campaigns continuously based on lead quality, conversion rates, and ROI.',
+        'Shorten your B2B sales cycle with high-intent content assets. We build targeted information hubs, solution guides, and educational content that address the exact pain points of industrial buyers, moving them seamlessly from discovery to request-for-quote (RFQ).',
+        'Inbound Lead Magnets',
+        'Sector-Specific Insights',
+        'Product Application Notes',
+        'RFQ Funnel Optimization.', 
       ],
     },
     {
-      title: 'Linkedin Marketing',
+      title: 'Industrial Social Strategy & Awareness',
       color: 'bg-purple-200 text-purple-700',
       icon: (
         <img src="/icons/Shape11.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Reaching manufacturing buyers and industry professionals through LinkedIn targeting.',
-        'Creating sponsored content and outreach that positions your brand as a trusted partner.',
-        'Segmenting audiences by role, company, and industry for better lead relevance.',
-        'Optimising company page and campaign copy to support B2B credibility.',
-        'Tracking leads and interactions with LinkedIn conversion forms and engagement metrics.',
+        'Amplify your industrial legacy and market footprint. We engineer high-impact social media strategies tailored for the manufacturing sector, focusing on corporate responsibility, infrastructure milestones, and major sector announcements that command industry-wide attention.',
+        'B2B Audience Engagement',
+        'Video Storytelling',
+        'Multi-Channel Distribution',
+        'Industry Authority Mapping', 
       ],
     },
-    {
-      title: 'Industrial Content Marketing',
-      color: 'bg-rose-200 text-rose-700',
+     {
+      title: 'Web Design & Conversion Rate Optimization (CRO)',
+      color: 'bg-yellow-200 text-purple-700',
       icon: (
-        <img src="/icons/Shape12.png" alt="SEO" className="w-5" />
+        <img src="/icons/web.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Creating technical content that explains your products and builds trust with buyers.',
-        'Publishing case studies, product guides, and industry thought leadership for credibility.',
-        'Crafting copy that appeals to procurement, engineering, and operations audiences.',
-        'Aligning content to search intent for industrial buyers at each stage of research.',
-        'Keeping content consistent across website, social, and sales enablement channels.',
+        'Turn your website into your highest-performing sales asset. We build premium, high-speed web experiences on modern tech stacks that combine stunning UI/UX with rigorous conversion rate optimization (CRO) to transform B2B traffic into qualified sales opportunities.',
+        'Custom B2B UI/UX',
+        'Full-Stack Development',
+        'Clean Typography',
+        'Modern CMS Integration',
       ],
     },
-    {
-      title: 'Social Media for Manufacturing Brands',
-      color: 'bg-indigo-200 text-indigo-700',
-      icon: (
-        <img src="/icons/Shape13.png" alt="SEO" className="w-5" />
-      ),
-      points: [
-        'Showing your manufacturing brand consistently across social platforms with strong visuals.',
-        'Sharing product stories, customer success cases, and industry expertise for credibility.',
-        'Engaging buyers and partners through targeted content and community interaction.',
-        'Using LinkedIn, Facebook, and Instagram to support lead generation and brand reach.',
-        'Measuring social engagement, follower growth, and enquiry interest from campaigns.',
-      ],
-    },
-    {
-      title: 'Website Design & Conversion Optimization',
-      color: 'bg-teal-200 text-teal-700',
-      icon: (
-        <img src="/icons/Shape14.png" alt="SEO" className="w-5" />
-      ),
-      points: [
-        'Designing websites that look professional and build credibility for manufacturing brands.',
-        'Optimising conversion points so visitors can easily request quotes or contact sales.',
-        'Structuring pages around product discovery, benefits, and buyer trust signals.',
-        'Ensuring mobile and desktop experiences are fast, clear, and easy to use.',
-        'Testing and improving the site based on visitor behaviour and enquiry performance.',
-      ],
-    },
+
+
   ];
 
   const [formData, setFormData] = useState({
@@ -299,11 +274,11 @@ export default function Home() {
 
               <div className="mt-5 pt-4 border-t border-slate-200">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-900 mb-5">
-                  Top Graduates Hired By
+                  Long-Term Partnerships with Industry Giants
                 </h3>
                 <div className="overflow-hidden">
                   <div className="marquee min-w-[200%] flex items-center gap-8 px-4">
-                    {['/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png', '/clientlogo/client1.png', '/clientlogo/client2.png', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png'].map((src, index) => (
+                    {['/clientlogo/client1.png', '/manufacturer/client-logo/dunham.webp', '/clientlogo/client3.png', '/clientlogo/client4.png', '/manufacturer/client-logo/invergypowersupply.png', '/clientlogo/client6.png', '/clientlogo/client1.png', '/manufacturer/client-logo/jaguar.svg', '/clientlogo/client3.png', '/clientlogo/client4.png', '/clientlogo/client5.png', '/clientlogo/client6.png'].map((src, index) => (
                       <div key={index} className="flex-shrink-0 rounded-[12px] p-2 shadow-sm">
                         <img src={src} alt={`Client ${index % 6 + 1}`} className="h-12 w-24 object-contain" />
                       </div>
@@ -473,7 +448,7 @@ export default function Home() {
               Call
             </a>
             <a
-              href="https://wa.me/919560785068?text=Hello%20Digital%20Xplode,%20I%20want%20to%20enquire%20about%20your%20services."
+              href="https://wa.me/919971068400?text=Hello%20Digital%20Xplode,%20I%20want%20to%20enquire%20about%20your%20services."
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] bg-emerald-500 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-emerald-600"

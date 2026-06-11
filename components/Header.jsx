@@ -37,7 +37,7 @@ export default function Header() {
                 href="https://www.linkedin.com/company/digitalxplode"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-sky-400"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:bg-[#0A66C2] text-[#0A66C2] hover:text-[#fff]"
                 aria-label="Digital Xplode on LinkedIn"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
@@ -48,7 +48,7 @@ export default function Header() {
                 href="https://www.facebook.com/DigitalXplode"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:bg-[#1877F2] text-[#1877F2] hover:text-[#fff]"
                 aria-label="Digital Xplode on Facebook"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
@@ -59,7 +59,7 @@ export default function Header() {
                 href="https://www.instagram.com/digitalxplodeofficial"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:bg-[#E4405F] text-[#E4405F] hover:text-[#fff]"
                 aria-label="Digital Xplode on Instagram"
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
@@ -68,17 +68,7 @@ export default function Header() {
                   <path d="M17.5 6.5h.01" />
                 </svg>
               </a>
-              <a
-                href="https://x.com/digital_xplode"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
-                aria-label="Digital Xplode on Twitter"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                  <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.94 4.94 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.958 13.958 0 011.671 3.149a4.92 4.92 0 001.523 6.573 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.085 4.928 4.928 0 004.6 3.417A9.865 9.865 0 010 19.54a13.936 13.936 0 007.548 2.212c9.057 0 14.01-7.507 14.01-14.01 0-.213-.005-.426-.014-.637A10.012 10.012 0 0024 4.557z" />
-                </svg>
-              </a>
+             
             </div>
             <button
               type="button"
