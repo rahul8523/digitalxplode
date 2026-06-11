@@ -64,7 +64,7 @@ const teamMembers = [
   },
   {
     name: 'Shikha Kushwaha',
-    position: 'Executive Web Developer',
+    position: 'Exec. Web Developer',
     badge: 'Executive Web Developer',
     description:
       'I create fast, conversion-focused websites that communicate your manufacturing capabilities clearly and capture leads with strong user experiences.',
