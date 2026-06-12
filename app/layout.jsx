@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'NewDX Website',
+  title: 'Digital Xplode - Leading Digital Marketing Agency for Manufacturing Companies',
   description: 'Fast Next.js landing page with sticky header and responsive hero',
 };
 
