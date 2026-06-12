@@ -115,8 +115,10 @@ export default function StudentSuccessStories() {
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        <div className="mt-8 max-h-[560px] overflow-hidden overscroll-contain pr-2 hide-scrollbar">
-          <div className="marquee-vertical space-y-4">
+        <div
+          className="mt-8 max-h-[560px] overflow-y-auto pr-2 hide-scrollbar scrollable-y"
+        >
+          <div className="space-y-4">
             {testimonials.map((item, index) => (
               <button
                 key={item.name}

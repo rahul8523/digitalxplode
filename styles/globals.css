@@ -84,6 +84,11 @@
     animation-play-state: paused;
   }
 
+  .scrollable-y {
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
   header {
     @apply font-display tracking-tight;
   }
