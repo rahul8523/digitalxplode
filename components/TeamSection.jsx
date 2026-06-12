@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: 'Atul Kumar',
-    position: 'Performance Marketing Executive ',
+    position: 'Performance Marketing',
     badge: 'Performance Marketing Executive',
     title: 'A campaign analyst specializing in the operational management, optimization, and tracking of multi-channel digital ad accounts.',
     description:

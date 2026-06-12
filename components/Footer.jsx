@@ -16,7 +16,7 @@ export default function Footer() {
                 </svg>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14067.597855826028!2d77.28672787365778!3d28.600180183837113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a11bc2a1a7%3A0xfdb4f35ec90d6f18!2sDigital%20Xplode%20(P)%20Ltd.%20-%20Best%20Digital%20Marketing%20%26%20Web%20Development%20Company%20in%20Noida!5e0!3m2!1sen!2sin!4v1780903386152!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.197954542648!2d77.31486877549938!3d28.593837675685975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5162452931f%3A0x37452a025c89e8f6!2sDigital%20Xplode%20(P)%20Ltd.%20-%20Best%20Digital%20Marketing%20%26%20Web%20Development%20Company%20in%20Noida!5e0!3m2!1sen!2sin!4v1781271498992!5m2!1sen!2sin"
                 className="h-auto w-full sm:w-[400px] border-0"
                 allowFullScreen=""
                 loading="lazy"

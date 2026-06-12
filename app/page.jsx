@@ -437,7 +437,7 @@ export default function Home() {
             <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">Need help right now?</p>
             <p className="mt-1 text-sm font-semibold text-white sm:text-base">Reach us instantly via call, WhatsApp, or enquiry</p>
           </div>
-          <div className="flex w-full items-center gap-2 overflow-x-auto pb-1 sm:w-auto sm:overflow-visible justify-center">
+          <div className="flex w-full items-center gap-2 pb-1 justify-center overflow-visible">
             <div className="relative" tabIndex={0} onBlur={() => setShowCallMenu(false)}>
               <button
                 type="button"
@@ -454,7 +454,7 @@ export default function Home() {
               </button>
 
               {showCallMenu && (
-                <div className="absolute bottom-14 left-0 z-50 w-56 rounded-md bg-white py-2 shadow-lg ring-1 ring-slate-200">
+                <div className="absolute bottom-14 left-0 z-50 w-[min(14rem,calc(100vw-2rem))] rounded-md bg-white py-2 shadow-lg ring-1 ring-slate-200">
                   <a
                     href="tel:+919971068400"
                     className="block px-4 py-2 text-sm text-slate-900 hover:bg-slate-100"
