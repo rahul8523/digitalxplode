@@ -26,7 +26,7 @@ export default function Header() {
           <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-10 text-lg font-medium text-slate-900 md:flex">
             <a href="#portfolio" className="transition hover:text-slate-950">Portfolio</a>
             <a href="#xplore" className="transition hover:text-slate-950">Xplore DX</a>
-            <a href="#contact" className="transition hover:text-slate-950">Contact Us</a>
+            <a href="#success-story" className="transition hover:text-slate-950">Success Story</a>
             {/* <a href="#plans" className="transition hover:text-slate-950">$1 SLA PLAN</a> */}
           </nav>
 

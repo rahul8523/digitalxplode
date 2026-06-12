@@ -94,7 +94,7 @@ export default function StudentSuccessStories() {
   }, [activeIndex]);
 
   return (
-    <section className="mx-auto max-w-[1240px] px-4 py-12">
+    <section className="mx-auto max-w-[1240px] px-4 py-12" id="success-story">
       <div className="text-center">
         {/* <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">
           Student Success Stories

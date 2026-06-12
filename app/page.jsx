@@ -9,6 +9,7 @@ import FAQ from '@/components/FAQ';
 
 export default function Home() {
   const [openIndex, setOpenIndex] = useState(0);
+  const [showCallMenu, setShowCallMenu] = useState(false);
   const practitionerItems = [
     {
       title: 'Search & Answer Engine Dominance (SEO & AEO)',
@@ -366,11 +367,11 @@ export default function Home() {
                   )}
                 </form>
                 <a
-                  href="https://wa.me/+919971791782"
+                  href="https://wa.me/+919560785068"
                   className="inline-flex items-center justify-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
                 >
                   <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-600 text-white">✓</span>
-                  Chat on what’s app
+                  Chat on WhatsApp
                 </a>
               </div>
             </aside>
@@ -382,8 +383,8 @@ export default function Home() {
           <div className="sm:p-10">
             <div className="mb-8 text-center">
               <p className="text-xl mb-2 font-semibold text-sky-500">Our Core Services</p>
-              <h2 className="text-4xl font-semibold text-slate-900">Manufacturing SEO/AEO/GEO</h2>
-              <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Rank higher on Google for industrial and product-specific keywords.</p>
+              <h2 className="text-4xl font-semibold text-slate-900">Capabilities Built for Scale</h2>
+              <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Data-driven marketing strategies engineered to capture high-value leads and accelerate pipeline growth.</p>
             </div>
             <div className="space-y-5 nt-5 sm:mt-20">
               {practitionerItems.map((item, index) => (
@@ -436,25 +437,46 @@ export default function Home() {
             <p className="mt-1 text-sm font-semibold text-white sm:text-base">Reach us instantly via call, WhatsApp, or enquiry</p>
           </div>
           <div className="flex w-full items-center gap-2 overflow-x-auto pb-1 sm:w-auto sm:overflow-visible">
+            <div className="relative" tabIndex={0} onBlur={() => setShowCallMenu(false)}>
+              <button
+                type="button"
+                onClick={() => setShowCallMenu((s) => !s)}
+                aria-expanded={showCallMenu}
+                className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] border border-slate-800 bg-sky-400/95 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-slate-900"
+              >
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-sky-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 13 13 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 13 13 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                Call
+              </button>
+
+              {showCallMenu && (
+                <div className="absolute bottom-14 left-0 z-50 w-56 rounded-md bg-white py-2 shadow-lg ring-1 ring-slate-200">
+                  <a
+                    href="tel:+919971068400"
+                    className="block px-4 py-2 text-sm text-slate-900 hover:bg-slate-100"
+                  >
+                    +91 99710 68400
+                  </a>
+                  <a
+                    href="tel:+919560785068"
+                    className="block px-4 py-2 text-sm text-slate-900 hover:bg-slate-100"
+                  >
+                    +91 95607 85068
+                  </a>
+                </div>
+              )}
+            </div>
             <a
-              href="tel:+919560785068"
-              className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] border border-slate-800 bg-sky-400/95 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-slate-900"
-            >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-sky-400">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 13 13 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 13 13 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </span>
-              Call
-            </a>
-            <a
-              href="https://wa.me/919971068400?text=Hello%20Digital%20Xplode,%20I%20want%20to%20enquire%20about%20your%20services."
+              href="https://wa.me/+919560785068?text=Hello%20Digital%20Xplode,%20I%20want%20to%20enquire%20about%20your%20services."
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex min-w-[128px] min-h-[48px] items-center justify-center gap-2 rounded-[12px] bg-emerald-500 px-3 sm:px-4 text-sm font-semibold text-white transition duration-200 hover:bg-emerald-600"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white">
-                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" stroke-width="0" viewBox="0 0 16 16" class="h-8 w-auto text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path></svg>
+                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" className="h-8 w-auto text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path></svg>
               </span>
               WhatsApp
             </a>

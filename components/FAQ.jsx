@@ -3,18 +3,26 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "What is digital marketing for manufacturing companies?", a: "Digital marketing for manufacturing focuses on channels and tactics that generate qualified leads and visibility for industrial buyers — SEO, paid ads, and targeted content for buyers and procurement teams." },
-  { q: "Why do manufacturing companies need digital marketing?", a: "To be found by buyers researching suppliers, build trust through content, and create predictable lead pipelines that integrate with sales." },
-  { q: "Does digital marketing work for industrial and manufacturing businesses?", a: "Yes — when tactics are tailored to long sales cycles, technical buyers, and B2B channels like LinkedIn and targeted search." },
-  { q: "How can a manufacturing company generate leads online?", a: "By combining intent-led SEO, technical content that matches buyer queries, and lead capture flows tuned for B2B procurement." },
-  { q: "How do manufacturing companies get B2B leads?", a: "Through account-based outreach, targeted campaigns, content that answers buyer questions, and consistent search presence." },
-  { q: "What is export marketing for manufacturers?", a: "Export marketing focuses on positioning, marketplaces, and search visibility in target countries to attract international buyers." },
-  { q: "How important is website speed for manufacturers?", a: "Very — faster sites improve user experience, reduce bounce, and help SEO performance for product and category pages." },
-  { q: "How can manufacturers find international buyers online?", a: "Use SEO for country-specific keywords, trade marketplaces, LinkedIn outreach, and paid campaigns targeted by geography and industry." },
-  { q: "Can digital marketing help manufacturers expand globally?", a: "Yes — a focused strategy for target markets, multilingual content, and local SEO can open international channels." },
-  { q: "How do you measure digital marketing ROI for manufacturing companies?", a: "Track lead quality, pipeline velocity, and revenue influenced per campaign rather than just raw clicks or impressions." },
-  { q: "How much does digital marketing cost for manufacturers?", a: "Costs vary by scope; we recommend starting with a discovery phase, then scaling campaigns based on measured outcomes." },
-  { q: "What is the best lead generation strategy for manufacturing companies?", a: "A mix of technical SEO, targeted paid channels, and industry-specific content that addresses procurement buyer intent." },
+  { q: "What services does Digital Xplode offer?", a: "Digital Xplode provides end-to-end digital growth solutions, including Website Design & Development, SEO, Social Media Marketing, Google Ads (PPC), Branding, Content Marketing, Lead Generation, E-commerce Solutions, and Performance Marketing.\n\nOur goal is to help businesses increase visibility, generate quality leads, and drive measurable growth." },
+
+  { q: "How do you create a digital marketing strategy for my business?", a: "We begin by understanding your business goals, industry, competitors, and target audience. \n\nBased on this research, we create a customized strategy that combines the right mix of SEO, paid advertising, social media, content, and web optimization to deliver maximum ROI." },
+
+  { q: "How long does it take to see results from digital marketing?", a: "The timeline depends on the services chosen and your business goals. Paid advertising can generate results within days, while SEO and organic growth strategies typically take a few months to build sustainable long-term visibility and lead generation. We focus on both quick wins and long-term success." },
+
+  { q: "Do you work with businesses from different industries?", a: "We work with startups, SMEs, educational institutions, healthcare brands, e-commerce businesses, real estate companies, manufacturing firms, and many other industries.\n\nOur strategies are tailored to each business rather than using a one-size-fits-all approach." },
+
+  { q: "Why should I choose Digital Xplode over other agencies?", a: "With years of experience, a results-driven approach, and a team of specialists across multiple digital domains, Digital Xplode focuses on delivering measurable business growth, not just marketing activities. \n\nWe combine creativity, technology, and data-driven decision-making to help brands scale faster and smarter." },
+
+  { q: "Do I need a long-term contract to work with Digital Xplode?", a: "No. We believe in earning your trust through results. Depending on the service, we offer flexible engagement models that can be customized to your business goals and budget." },
+
+  { q: "Will I receive regular reports and performance updates?", a: "Absolutely. Transparency is a key part of our process. We provide regular reports and insights on campaign performance, website traffic, lead generation, ad spend, and other key metrics so you always know how your marketing is performing." },
+
+  { q: "Can Digital Xplode help generate leads and sales for my business?", a: "Our strategies are designed not only to increase brand visibility but also to generate qualified leads, improve conversions, and drive revenue growth through targeted marketing campaigns and optimization techniques." },
+
+  { q: "Do you provide website design and development services?", a: "We create responsive, user-friendly, and conversion-focused websites that help businesses establish a strong online presence while delivering a seamless experience across all devices." },
+
+  { q: "What makes Digital Xplode different from other marketing agencies?", a: "We don't believe in generic marketing solutions. Every strategy we create is tailored to your business objectives, audience, and industry. \nOur focus is on delivering real business outcomes through a combination of creativity, data, technology, and continuous optimization." },
+
 ];
 
 export default function FAQ() {
@@ -35,7 +43,7 @@ export default function FAQ() {
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="space-y-4">
             {column.map(({ faq, index }) => (
-              <div key={index} className="rounded-[12px] border border-slate-200 bg-white p-5">
+              <div key={index} className="rounded-[12px] border border-slate-200 bg-white p-3">
                 <button
                   type="button"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -52,7 +60,7 @@ export default function FAQ() {
                   </div>
                 </button>
 
-                <div className={`mt-3 p-5 text-base text-slate-700 ${openIndex === index ? "block" : "hidden"}`}>
+                <div className={`mt-3 p-5 text-base text-slate-700 whitespace-pre-wrap ${openIndex === index ? "block" : "hidden"}`}>
                   {faq.a}
                 </div>
               </div>

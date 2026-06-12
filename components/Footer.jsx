@@ -38,7 +38,8 @@ export default function Footer() {
             <div className="text-base leading-8 mt-4 text-slate-900">
               <div>
                 <img src="/contact/call.png" alt="Digital Xplode" className="h-12 w-auto" />
-                <p className="font-semibold text-sky-400 mt-2">IND: <a href="tel:+919971068400" className="text-slate-900 transition hover:text-sky-600 text-white">+91-997-10-68400</a></p>
+                <p className="font-semibold text-sky-400 mt-2">IND: <a href="tel:+919560785068" className="text-slate-900 transition hover:text-sky-600 text-white">+91-956-078-5068</a></p>
+                <p className="font-semibold text-sky-400">IND: <a href="tel:+919971068400" className="text-slate-900 transition hover:text-sky-600 text-white">+91-997-10-68400</a></p>
               </div>
               <div>
                 <p className="font-semibold text-sky-400">Enquiry: <a href="mailto:info@digitalxplode.com" className="text-slate-900 transition hover:text-sky-600 text-white">info@digitalxplode.com</a></p>
