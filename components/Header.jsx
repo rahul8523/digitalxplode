@@ -102,22 +102,18 @@ export default function Header() {
               ✕
             </button>
           </div>
-          <nav className="flex w-full flex-col gap-4 text-slate-900">
-            <a href="#portfolio" className="block w-full rounded-2xl px-4 py-4 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
+          <nav className="flex w-full flex-col gap-2 text-slate-900">
+            <a href="#portfolio" className="block w-full px-4 py-2 border-b border-slate-200 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
               Portfolio
             </a>
-            <a href="#xplore" className="block w-full rounded-2xl px-4 py-4 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
+            <a href="#xplore" className="block w-full px-4 py-2 border-b border-slate-200 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
               Xplore DX
             </a>
-            <a href="#contact" className="block w-full rounded-2xl px-4 py-4 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
-              Contact Us
+            <a href="#success-story" className="block w-full px-4 py-2 border-b border-slate-200 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
+              Success Stories
             </a>
-            <a href="#plans" className="block w-full rounded-2xl px-4 py-4 text-base font-semibold transition hover:bg-slate-50" onClick={() => setMenuOpen(false)}>
-              $1 SLA PLAN
-            </a>
-            <a href="tel:+1234567890" className="block w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-base font-semibold text-slate-900 transition hover:bg-slate-100">
-              Let's Talk
-            </a>
+      
+      
           </nav>
         </div>
 

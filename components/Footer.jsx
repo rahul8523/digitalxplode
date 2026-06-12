@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="relative z-60 bg-black text-slate-950 border-t border-slate-200 pb-20">
       <div className="mx-auto max-w-[1240px] px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid sm:gap-10 lg:grid-cols-[1.5fr_1fr_1fr] items-center justify-items-center">
-          <div className="space-y-5">
+          <div className="space-y-8">
             <div className="flex items-center gap-3">
               <img src="/logo/whitelogo.png" alt="Digital Xplode" className="h-12 w-auto" />
             </div>
@@ -27,8 +27,8 @@ export default function Footer() {
 
           <div className="border-t mt-10 border-slate-200 pt-6 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-400">Address</p>
-             <img src="/contact/flag.jpg" alt="Digital Xplode" className="mt-4 h-10 w-auto" />
-            <p className="text-white mt-2 text-base leading-8 text-slate-900">
+             <img src="/contact/flag.jpg" alt="Digital Xplode" className="mt-4 sm:mt-8 h-9 w-auto" />
+            <p className="text-white mt-2 sm:mt-8 text-base leading-8 text-slate-900">
               C-50 G/03, Sector 6, Noida, Uttar Pradesh 201301 India
             </p>
           </div>

@@ -62,16 +62,19 @@ const testimonials = [
 export default function StudentSuccessStories() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   const videoRef = useRef(null);
   const active = testimonials[activeIndex];
 
   useEffect(() => {
+    if (isPaused) return;
+
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     }, 4500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -107,7 +110,11 @@ export default function StudentSuccessStories() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-4 xl:grid-cols-[0.8fr_1fr_1fr] items-start">
+      <div
+        className="mt-12 grid gap-4 xl:grid-cols-[0.8fr_1fr_1fr] items-start"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
         <div className="mt-8 max-h-[560px] overflow-hidden overscroll-contain pr-2 hide-scrollbar">
           <div className="marquee-vertical space-y-4">
             {testimonials.map((item, index) => (

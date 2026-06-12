@@ -1,4 +1,13 @@
+import { useEffect, useState } from 'react';
+
 export default function ClientsShowcase() {
+  const stats = [
+    { label: 'Client Retention Rate', value: 95, suffix: '%' , style: 'rounded-l-2xl bg-[#1e63ff]'},
+    { label: 'Average Growth Received', value: 45, suffix: '%' , style: 'bg-[#ff5a00]'},
+    { label: 'Clients Served', value: 500, suffix: '+' , style: 'bg-[#1e63ff]'},
+    { label: 'Leads Generated', value: 55000, suffix: '+' , style: 'rounded-r-2xl bg-[#ff5a00]'},
+  ];
+
   const clientLogos = [
     '/manufacturer/client-logo/alstoneindia.png',
     '/manufacturer/client-logo/argentium.png',
@@ -19,29 +28,40 @@ export default function ClientsShowcase() {
     '/manufacturer/client-logo/sodhisons.png',
   ];
 
+  const [counters, setCounters] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+    let rafId;
+    const duration = 1200;
+    const start = performance.now();
+
+    const update = (now) => {
+      const progress = Math.min(1, (now - start) / duration);
+      setCounters(stats.map((stat) => Math.ceil(stat.value * progress)));
+      if (progress < 1) {
+        rafId = requestAnimationFrame(update);
+      }
+    };
+
+    rafId = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
+
   return (
     <section className="bg-[f3f9ff] py-12" id="portfolio">
       <div className="mx-auto max-w-[1240px] px-4 text-center">
         <h2 className="text-4xl font-semibold text-slate-900">Trusted Growth Partner for Manufacturing Companies</h2>
         <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Our manufacturing-focused digital marketing strategies have helped industrial brands improve visibility, generate enquiries, and build market authority.</p>
 
-        <div className="m-auto mt-8 flex max-w-5xl items-stretch justify-center sm:gap-0 grid gap-2 grid-cols-2 sm:grid-cols-4">
-          <div className="flex-1 rounded-l-2xl bg-[#1e63ff] px-8 py-8 text-white">
-            <div className="text-4xl font-semibold">95% +</div>
-            <div className="mt-2 text-base">Client Retention Rate</div>
-          </div>
-          <div className="flex-1 bg-[#ff5a00] px-8 py-8 text-white">
-            <div className="text-4xl font-semibold">45% +</div>
-            <div className="mt-2 text-base">Client Retention Rate</div>
-          </div>
-          <div className="flex-1 bg-[#1e63ff] px-8 py-8 text-white">
-            <div className="text-4xl font-semibold">300% +</div>
-            <div className="mt-2 text-base">Client Retention Rate</div>
-          </div>
-          <div className="flex-1 rounded-r-2xl bg-[#ff5a00] px-8 py-8 text-white">
-            <div className="text-4xl font-semibold">55,000 +</div>
-            <div className="mt-2 text-base">Client Retention Rate</div>
-          </div>
+        <div className="m-auto mt-8 grid max-w-5xl sm:grid-cols-4">
+          {stats.map((stat, index) => (
+            <div key={stat.label} className={`px-5 py-6 text-white ${stat.style}`}>
+              <div className="text-3xl font-semibold sm:text-4xl">
+                {counters[index].toLocaleString()}{stat.suffix}
+              </div>
+              <div className="mt-2 text-base sm:text-lg">{stat.label}</div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-10 space-y-4">

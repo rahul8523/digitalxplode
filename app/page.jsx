@@ -32,8 +32,7 @@ export default function Home() {
         <img src="/icons/optimization.png" alt="SEO" className="w-5" />
       ),
       points: [
-        'Secure your brands presence inside AI-generated summaries. We strategically optimize your content layout, data structure, and citations to ensure your business is actively cited, synthesized, and recommended by modern generative AI platforms.',
-        'Optimizing for the AI era. We engineer your online presence to guarantee visibility within generative search results, driving brand inclusion and citations across the world’s leading LLMs and AI platforms.',
+          'Secure your brand’s presence inside AI-generated summaries. We strategically optimize your content layout, data structure, and citations to ensure your business is actively cited, synthesized, and recommended by modern generative AI platforms.\n\nOptimizing for the AI era, we engineer your online presence to guarantee visibility within generative search results, driving brand inclusion and citations across the world’s leading LLMs and AI platforms.',
         'Generative Citation Mapping',
         'LLM Sentiment Alignment',
         'Structured Data Enrichment',
@@ -367,7 +366,7 @@ export default function Home() {
                   )}
                 </form>
                 <a
-                  href="https://wa.me/+919560785068"
+                  href="https://wa.me/+919560785068" target="_blank"
                   className="inline-flex items-center justify-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100"
                 >
                   <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-600 text-white">✓</span>
@@ -411,10 +410,12 @@ export default function Home() {
                   </button>
                   <div className={`transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100 py-5 px-6' : 'max-h-0 opacity-0 py-0 px-6'}`}>
                     <div className="space-y-3 px-8 text-sm text-slate-700">
-                      {item.points.map((point) => (
-                        <div key={point} className="flex items-start gap-3">
-                          <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-500" />
-                          <p className="text-base text-slate-700">{point}</p>
+                      {item.points.map((point, pIndex) => (
+                        <div key={`${index}-${pIndex}`} className="flex items-start gap-3">
+                          {pIndex !== 0 && (
+                            <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-sky-500" />
+                          )}
+                          <p className="text-base text-slate-700 whitespace-pre-wrap">{point}</p>
                         </div>
                       ))}
                     </div>

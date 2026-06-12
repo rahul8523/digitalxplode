@@ -85,7 +85,7 @@ const teamMembers = [
     title: 'A technical search strategist expert at engineering deep keyword architectures to dominate high-intent B2B search rankings.',
     description:
       'Aniket commands our organic search frameworks, executing technical site audits, semantic content silo structures, and advanced schema maps. He targets high-value keyword clusters that reach procurement officers, driving sustained organic growth and positioning manufacturing brands ahead of global competitors. ',
-    image: '/team/Aniket.png',
+    image: '/team/aniket.png',
   },
   {
     name: 'Shubham Tiwari',
@@ -300,15 +300,15 @@ export default function TeamSection() {
             <div className="mt-8 space-y-2">
               {/* <p className="text-sm uppercase tracking-[0.3em] text-black">{activeMember.badge}</p> */}
               <h3 className="text-3xl font-semibold text-black sm:text-4xl">{activeMember.name}</h3>
-              <p className="text-xl font-semibold text-black">{activeMember.position}</p>
+              <p className="text-base font-semibold text-black">{activeMember.badge}</p>
             </div>
           </div>
 
           <div className="p-6 shadow-sm sm:py-12 border-t-[5px] border-t-sky-500 rounded-tr-[8px] rounded-bl-[8px]">
-            <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-100 px-4 py-2 text-sm font-semibold text-black">
+            {/* <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-100 px-4 py-2 text-sm font-semibold text-black">
               <span className="h-2 w-2 rounded-full bg-sky-500"></span>
               {activeMember.badge}
-            </span>
+            </span> */}
             <h3 className="mt-6 text-2xl font-semibold tracking-tight text-slate-900">
               {activeMember.title}
             </h3>
