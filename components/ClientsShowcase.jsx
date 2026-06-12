@@ -53,13 +53,13 @@ export default function ClientsShowcase() {
         <h2 className="text-4xl font-semibold text-slate-900">Trusted Growth Partner for Manufacturing Companies</h2>
         <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">Our manufacturing-focused digital marketing strategies have helped industrial brands improve visibility, generate enquiries, and build market authority.</p>
 
-        <div className="m-auto mt-8 grid max-w-5xl sm:grid-cols-4">
+        <div className="m-auto mt-8 grid max-w-5xl sm:gap-0 gap-1 grid-cols-2 sm:grid-cols-4">
           {stats.map((stat, index) => (
-            <div key={stat.label} className={`px-5 py-6 text-white ${stat.style}`}>
+            <div key={stat.label} className={`px-2 py-5 sm:px-5 sm:py-6 text-white ${stat.style}`}>
               <div className="text-3xl font-semibold sm:text-4xl">
                 {counters[index].toLocaleString()}{stat.suffix}
               </div>
-              <div className="mt-2 text-base sm:text-lg">{stat.label}</div>
+              <div className="mt-2 text-xs sm:text-base sm:text-lg">{stat.label}</div>
             </div>
           ))}
         </div>

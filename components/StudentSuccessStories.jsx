@@ -154,7 +154,7 @@ export default function StudentSuccessStories() {
 
         <div className="p-6 shadow-sm">
           <div className="flex h-auto flex-col items-center justify-center rounded-[32px] text-center">
-            <div className="relative flex-shrink-0 w-full h-[250px] md:h-[550px] rounded-2xl overflow-hidden self-center transition-all duration-500">
+            <div className="relative flex-shrink-0 w-full h-auto md:h-[550px] rounded-2xl overflow-hidden self-center transition-all duration-500">
               {/* <video
                 ref={videoRef}
                 src={active.videoUrl}
