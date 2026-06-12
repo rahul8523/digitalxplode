@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 
 const testimonials = [
   {
-    name: 'SBL',
+    name: 'Oreana Power',
     role: 'Perfect metal structures',
     quote: 'Digital Xplode didnt just hand us a generic marketing plan; they rebuilt our entire digital strategy from the ground up. Their deep understanding of technical search and B2B user intent has systematically scaled our qualified pipeline. They are a true partner for any enterprise looking to dominate their market.',
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/manufacturer/client-logo/client4.png',
-    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
+    avatar: '/manufacturer/client-logo/orianapower.gif',
+    videoUrl: '/manufacturer/client-photo/oreana.png',
   },
   {
     name: 'Kohler',
@@ -17,7 +17,7 @@ const testimonials = [
     details:
       'When you operate at a premium enterprise level, you need an agency that respects brand legacy while pushing technical boundaries. Their execution on our digital infrastructure and conversion optimization has been flawless. They make sure we are visible exactly where high-value commercial decision-makers look.',
     avatar: '/manufacturer/client-logo/kohler.png',
-    videoUrl: 'https://iimskills.com/NEWDM/anvi.mp4',
+    videoUrl: '/manufacturer/client-photo/anvi.png',
   },
   {
     name: 'Jaguar',
@@ -54,7 +54,7 @@ const testimonials = [
     details:
       'Operating as a market leader in premium architectural cladding means our digital presence must reflect absolute perfection. Digital Xplode has been instrumental in scaling our brand authority. Their strategic handling of our multi-phase awareness campaigns and targeted search positioning has seamlessly connected our product innovations with top-tier architects, builders, and partners nationwide.',
     avatar: '/manufacturer/client-logo/alstoneindia.png',
-    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
+    videoUrl: '/manufacturer/client-photo/alstone.png',
   },
 ];
 
@@ -149,14 +149,19 @@ export default function StudentSuccessStories() {
         <div className="p-6 shadow-sm">
           <div className="flex h-auto flex-col items-center justify-center rounded-[32px] text-center">
             <div className="relative flex-shrink-0 w-full h-[250px] md:h-[550px] rounded-2xl overflow-hidden self-center transition-all duration-500">
-              <video
+              {/* <video
                 ref={videoRef}
                 src={active.videoUrl}
                 className="w-full h-full object-cover"
                 playsInline
                 loop
+              /> */}
+
+               <img
+                src={active.videoUrl}
+                className="w-full h-full object-cover"
               />
-              <div
+              {/* <div
                 className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity duration-300"
                 onClick={() => {
                   const video = videoRef.current;
@@ -181,7 +186,7 @@ export default function StudentSuccessStories() {
                     </svg>
                   </button>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

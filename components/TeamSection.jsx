@@ -9,7 +9,7 @@ const teamMembers = [
     badge: 'Founder and CEO',
     title: 'Leading growth for manufacturing brands with data-driven performance',
     description:
-      'Strategic growth planning and digital transformation for manufacturing brands, focusing on visibility, credibility, and measurable lead generation. Performance marketing, SEO, and analytics are aligned with corporate goals to support sustained business outcomes. Campaigns are structured to deliver qualified enquiries and long-term momentum.',
+      'Backed by 15 years of deep industry experience, Sudhanshu is the visionary founder who built Digital Xplode from scratch into a powerhouse for enterprise growth. As a deep thinker and strong leader, his core philosophy shapes the very DNA of DX—bridging complex technical innovation with absolute operational excellence. He is relentlessly enthusiastic about scaling new horizons, driven by a defining mission to ensure his entire team grows and thrives in tandem with the agencies expanding global footprint.',
     image: '/team/CEO.png',
     linkedin: 'https://www.linkedin.com/in/sudhanshuarora',
   },
@@ -19,17 +19,17 @@ const teamMembers = [
     badge: 'Vice President',
     title: 'Driving revenue growth through strategic partnerships and performance optimisation',
     description:
-      'Revenue-focused marketing and commercial alignment ensure campaigns support sales objectives and customer acquisition goals. Performance metrics are monitored closely to optimise funnels and improve lead quality. Strategy execution is designed to generate sustained business value.',
+      'Bringing over 12 years of core sales expertise, Kushagra is the backbone of business development and the primary revenue driver for DX. He specializes in structuring high-value enterprise partnerships, unlocking complex B2B markets, and consulting with manufacturing leaders to architect scalable marketing solutions. His deep mastery of consultative client acquisition ensures that new brands are positioned on a definitive trajectory toward measurable commercial growth.',
     image: '/team/Kush.jpg',
     linkedin: 'https://www.linkedin.com/in/kushagrasingh',
   },
   {
     name: 'Shweta Mishra',
-    position: 'Head Operations',
-    badge: 'Head Operations',
+    position: 'Chief Operating Officer',
+    badge: 'Chief Operating Officer (COO)',
     title: 'Ensuring seamless execution and scalable operations for every campaign',
     description:
-      'Operational leadership coordinates teams, timelines, and systems to deliver high-quality execution without compromise. Efficiency and scalability are prioritised for each initiative. Delivery processes are structured to maintain consistency and client satisfaction.',
+      'With over 15 years of robust, cross-functional experience spanning Sales, Marketing, and Operations, Shweta serves as the operational anchor of the agency. As COO, she directs daily agency workflows, oversees high-level team management, and manages key client relationships to ensure absolute alignment on corporate goals. Her deep expertise in process optimization guarantees the flawless, timely delivery of complex enterprise campaigns, keeping our delivery infrastructure scalable and seamlessly aligned with client expectations.',
     image: '/team/shweta.jpg',
     linkedin: 'https://www.linkedin.com/in/shwetamishra',
   },
