@@ -2,48 +2,58 @@ import { useEffect, useRef, useState } from 'react';
 
 const testimonials = [
   {
-    name: 'Mr Prashant Agarwal',
+    name: 'SBL',
     role: 'Perfect metal structures',
-    quote: 'All thanks to the faculty, in-depth training, and internship, I have my portfolio ready.',
+    quote: 'Digital Xplode didnt just hand us a generic marketing plan; they rebuilt our entire digital strategy from the ground up. Their deep understanding of technical search and B2B user intent has systematically scaled our qualified pipeline. They are a true partner for any enterprise looking to dominate their market.',
     details:
       'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/clientlogo/client1.png',
+    avatar: '/manufacturer/client-logo/client4.png',
     videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
   {
-    name: 'Gunifsa 1',
+    name: 'Kohler',
     role: 'HCL Tech',
     quote: 'Thankful for the real-time practical exposure and full support from the team.',
     details:
-      'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/clientlogo/client2.png',
+      'When you operate at a premium enterprise level, you need an agency that respects brand legacy while pushing technical boundaries. Their execution on our digital infrastructure and conversion optimization has been flawless. They make sure we are visible exactly where high-value commercial decision-makers look.',
+    avatar: '/manufacturer/client-logo/kohler.png',
     videoUrl: 'https://iimskills.com/NEWDM/anvi.mp4',
   },
   {
-    name: 'Mr Prashant',
+    name: 'Jaguar',
     role: 'Perfect metal structures',
     quote: 'Digital Xplode - Driving Measurable Growth for Manufacturing Brands.',
     details:
-      'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/clientlogo/client3.png',
+      'Their performance marketing and LinkedIn strategies completely transformed how we penetrate key commercial accounts. The teams ability to seamlessly blend data-driven paid acquisition with high-impact corporate storytelling gave us an undeniable edge in market visibility.',
+    avatar: '/manufacturer/client-logo/jaguar.svg',
     videoUrl: 'https://iimskills.com/NEWDM/anvi.mp4',
   },
   {
-    name: 'Gunifsa 2',
+    name: 'Philips',
     role: 'Reynobond',
     quote: 'Thankful for the real-time practical exposure and full support from the team.',
     details:
-      'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/clientlogo/client4.png',
+      'We chose Digital Xplode because of their forward-thinking approach to search stack optimization. While other agencies are still stuck in standard SEO, their mastery over AEO and GEO ensured our brand became the definitive answer across traditional platforms and next-gen AI search engines alike.',
+    avatar: '/manufacturer/client-logo/client4.png',
     videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
   {
-    name: 'Gunifsa 3',
+    name: 'Dunhum Bush',
     role: 'HTC',
     quote: 'Thankful for the real-time practical exposure and full support from the team.',
     details:
-      'We were struggling to generate consistent enquiries online. Their manufacturing-focused SEO and campaigns helped us dominate key industry searches and significantly increase qualified leads.',
-    avatar: '/clientlogo/client5.png',
+      'Most agencies fail when trying to market highly technical, industrial equipment. Digital Xplode is the rare exception. Their industrial content marketing speaks the exact language of our engineers and procurement heads, significantly boosting our inbound RFQs and high-value project inquiries.',
+    avatar: '/manufacturer/client-logo/dunham.webp',
+    videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
+  },
+
+  {
+    name: 'Alstone',
+    role: 'HTC',
+    quote: 'Thankful for the real-time practical exposure and full support from the team.',
+    details:
+      'Operating as a market leader in premium architectural cladding means our digital presence must reflect absolute perfection. Digital Xplode has been instrumental in scaling our brand authority. Their strategic handling of our multi-phase awareness campaigns and targeted search positioning has seamlessly connected our product innovations with top-tier architects, builders, and partners nationwide.',
+    avatar: '/manufacturer/client-logo/alstoneindia.png',
     videoUrl: 'https://iimskills.com/NEWDM/kaushal.mp4',
   },
 ];
@@ -89,10 +99,10 @@ export default function StudentSuccessStories() {
           Student Success Stories
         </p> */}
         <h2 className="text-4xl font-semibold text-slate-900">
-          Hear From Manufacturing Leaders Who Scaled Their Growth
+           Trusted by Leaders, Validated by Results
         </h2>
         <p className="mx-auto mt-3 font-medium max-w-5xl text-lg text-slate-900">
-          See how manufacturers, industrial brands, and OEM suppliers generated more leads, improved search visibility, and increased revenue through our digital marketing strategies.
+          Real impact, lasting partnerships, and measurable growth from the brands we scale.
         </p>
       </div>
 
@@ -111,7 +121,7 @@ export default function StudentSuccessStories() {
                 }`}
               >
               <div className="flex gap-4">
-                <img src={item.avatar} alt={item.name} className="h-12 w-12 rounded-full object-cover" />
+                <img src={item.avatar} alt={item.name} className="h-16 w-16 rounded-[6px] object-contain" />
                 <div className="flex-1">
                   <div className="flex items-center justify-between gap-4">
                     <div>
