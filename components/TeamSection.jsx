@@ -7,9 +7,9 @@ const teamMembers = [
     name: 'Sudhanshu Arora',
     position: 'Founder and CEO',
     badge: 'Founder and CEO',
-    title: 'Leading growth for manufacturing brands with data-driven performance',
+    title: 'A visionary growth architect backed by 15 years of deep industry experience building high-performing enterprise engines from the ground up.',
     description:
-      'Backed by 15 years of deep industry experience, Sudhanshu is the visionary founder who built Digital Xplode from scratch into a powerhouse for enterprise growth. As a deep thinker and strong leader, his core philosophy shapes the very DNA of DX—bridging complex technical innovation with absolute operational excellence. He is relentlessly enthusiastic about scaling new horizons, driven by a defining mission to ensure his entire team grows and thrives in tandem with the agencies expanding global footprint.',
+      'Sudhanshu shapes the strategic DNA of the agency by seamlessly bridging complex technical innovation with absolute operational excellence. He steers our high-level corporate direction and expansion, ensuring that our internal team capabilities scale in perfect alignment with our growing global client footprint. ',
     image: '/team/CEO.png',
     linkedin: 'https://www.linkedin.com/in/sudhanshuarora',
   },
@@ -17,9 +17,9 @@ const teamMembers = [
     name: 'Kushagra Singh',
     position: 'Vice President',
     badge: 'Vice President',
-    title: 'Driving revenue growth through strategic partnerships and performance optimisation',
+    title: 'A veteran growth strategist with over 12 years of core sales mastery dedicated to unlocking enterprise revenue pipeline.',
     description:
-      'Bringing over 12 years of core sales expertise, Kushagra is the backbone of business development and the primary revenue driver for DX. He specializes in structuring high-value enterprise partnerships, unlocking complex B2B markets, and consulting with manufacturing leaders to architect scalable marketing solutions. His deep mastery of consultative client acquisition ensures that new brands are positioned on a definitive trajectory toward measurable commercial growth.',
+      'Kushagra commands our business development infrastructure, specializing in structuring high-value enterprise partnerships and entering complex B2B markets. He consults directly with manufacturing leaders to architect scalable, long-term marketing solutions that place brands on a definitive path toward measurable commercial growth. ',
     image: '/team/Kush.jpg',
     linkedin: 'https://www.linkedin.com/in/kushagrasingh',
   },
@@ -27,9 +27,9 @@ const teamMembers = [
     name: 'Shweta Mishra',
     position: 'Chief Operating Officer',
     badge: 'Chief Operating Officer (COO)',
-    title: 'Ensuring seamless execution and scalable operations for every campaign',
+    title: 'A robust operational anchor bringing over 15 years of cross-functional excellence across enterprise Sales, Marketing, and Operations. ',
     description:
-      'With over 15 years of robust, cross-functional experience spanning Sales, Marketing, and Operations, Shweta serves as the operational anchor of the agency. As COO, she directs daily agency workflows, oversees high-level team management, and manages key client relationships to ensure absolute alignment on corporate goals. Her deep expertise in process optimization guarantees the flawless, timely delivery of complex enterprise campaigns, keeping our delivery infrastructure scalable and seamlessly aligned with client expectations.',
+      'Shweta directs daily agency workflows and oversees our delivery infrastructure to keep it agile and scalable. She manages high-level team coordination and critical client relationships, optimizing agency processes to guarantee the flawless, timely execution of complex multi-channel campaigns. ',
     image: '/team/shweta.jpg',
     linkedin: 'https://www.linkedin.com/in/shwetamishra',
   },
@@ -37,135 +37,146 @@ const teamMembers = [
     name: 'Manjeet Kumar',
     position: 'Creative Director',
     badge: 'Creative Director',
-    title: 'Crafting premium brand storytelling that builds trust and recognition',
+    title: 'A premium visual strategist specializing in high-conversion UI/UX, packaging architecture, and advanced video storytelling. ',
     description:
-      'Creative direction focuses on polished visual narratives and brand experiences that elevate perception. Campaigns are developed to resonate with industrial buyers and decision-makers. Messaging is designed to reinforce credibility and market positioning.',
+      'Manjeet leads and mentors our core design cell, pushing creative boundaries to turn complex business concepts into clean visual stories. He bridges the gap between artistic innovation and commercial business strategy, ensuring that all client collateral commands immediate industry authority and drives user engagement.',
     image: '/team/Manjeet.jpg',
   },
   {
     name: 'Hareesh Kumar',
     position: 'Ads Expert',
     badge: 'Ads Expert',
-    title: 'Building targeted advertising strategies for qualified lead acquisition',
+    title: 'A data-driven acquisition expert specializing in engineering high-converting B2B paid media campaigns across Google and LinkedIn networks.',
     description:
-      'Paid media strategies target the right audience segments to maximise relevance and response. Campaign optimisation concentrates on lead quality and cost efficiency. Performance is measured through enquiries, conversions, and return on investment.',
+      'Harish drives our paid search and performance marketing engines to turn advertising spend into a predictable revenue pipeline. He handles algorithmic bidding precision, hyper-segmented audience targeting, and continuous trend analysis to consistently lower cost-per-lead metrics and maximize client ROI.',
     image: '/team/Hareesh.jpg',
   },
   {
     name: 'Tilak Gautam',
     position: 'Sr. Web Developer',
     badge: 'Sr. Web Developer',
-    title: 'Developing fast, conversion-focused websites with premium presentation',
+    title: 'A senior technical architect specializing in building high-speed, scalable, and full-stack enterprise web infrastructures.',
     description:
-      'Web development is oriented around speed, usability, and trust-building presentation. Site architecture supports clear messaging and strong calls to action. Technical foundations are built for reliability and future scalability.',
+      'Tilak transforms complex technical requirements into optimized digital assets using modern tech stacks and custom CMS integrations. He handles clean semantic code development and robust backend architectures, ensuring that client websites maintain exceptional load speeds, ironclad security, and maximum Conversion Rate Optimization (CRO) under heavy traffic volumes.',
     image: '/team/tilak-n.jpg',
   },
   {
     name: 'Rahul Singh Chauhan',
     position: 'Full Stack Developer',
     badge: 'Full Stack Developer',
-    title: 'Implementing scalable full stack systems with secure user experiences',
+    title: 'A full-stack developer expert at engineering fluid, end-to-end web applications by bridging front-end layouts with robust back-end logic.',
     description:
-      'Full stack delivery combines robust backend architecture with polished frontend usability. Security and maintainability are core priorities. The development approach supports seamless performance and dependable growth.',
+      'Rahul manages database workflows, server-side configurations, and custom application logic to ensure digital assets run flawlessly. He focuses on deploying modern tech stacks and deep API integrations, guaranteeing structural integrity, rapid response times, and an uncompromising foundation for complex B2B platforms. ',
     image: '/team/Rahul-new.jpg',
-  },
-  {
-    name: 'Shikha Kushwaha',
-    position: 'Exec. Web Developer',
-    badge: 'Executive Web Developer',
-    title: 'Delivering responsive web experiences that perform on every device',
-    description:
-      'Responsive web solutions are crafted for a consistent, professional experience across screens. Usability and visual quality are balanced for optimal engagement. Attention is given to performance, layout, and interactive clarity.',
-    image: '/team/shikhaa.jpeg',
   },
   {
     name: 'Aditya Sharma',
     position: 'Ads Manager',
     badge: 'Sr.Manager Google Adword',
-    title: 'Optimising paid campaigns for measurable traffic and business growth',
+    title: 'A search engine marketing specialist expert in turning targeted Google Paid Search and Display spend into scalable B2B leads. ',
     description:
-      'Paid campaign management is data-driven and focused on achieving measurable outcomes. Targeting and creative are refined to support lead generation and conversion performance. Budget efficiency is maintained through continuous optimisation.',
+      'Aditya manages daily search campaign architectures, handling rigorous keyword intent mapping and advanced negative-keyword funnels to eliminate budget waste. He continuously monitors quality scores and real-time click-through rates, securing premium ad placements that keep brands top-of-mind for key decision-makers.',
     image: '/team/Aditya.png',
   },
   {
     name: 'Pratima Jain',
     position: 'Content Strategist',
     badge: 'Strategy Specialist cum Content Writer',
-    title: 'Designing content strategies that align brand voice with market demand',
+    title: 'A corporate communication specialist expert at crafting high-impact organic social campaigns that communicate brand legacy.',
     description:
-      'Content strategy emphasises clear messaging and audience relevance for industrial buyers. Copy and content plans are structured to support trust, differentiation, and lead generation. Communications are aligned with commercial objectives and search intent.',
+      'Pratima handles multi-channel social distribution and audience engagement strategies, specifically capturing the attention of major industry stakeholders and CXOs. She translates complex B2B value propositions into educational asset hubs and narratives, building highly interactive professional communities that drive brand recall.',
     image: '/team/Pratima.jpg',
   },
   {
     name: 'Shubham Tiwari',
     position: 'Sr. Social Strategist',
     badge: 'Sr. Social Strategist | Digital Marketer',
-    title: 'Designing social campaigns that increase engagement and lead generation',
+    title: 'A senior brand strategist specializing in orchestrating multi-phase social frameworks that build long-term market authority.',
     description:
-      'Social strategy combines targeted content and audience engagement to support brand visibility. Campaigns are crafted for relevance, credibility, and measurable interest. Execution focuses on generating qualified opportunities through digital channels.',
+      'Shubham designs comprehensive corporate communication systems, content calendars, and trend-forecasting models aligned with high-level business goals. He refines organic distribution tactics based on algorithm changes and audience analytics, transforming standard corporate updates into widely visible, market-defining digital movements.',
     image: '/team/Shubham.jpg',
   },
   {
     name: 'Vishal Singh',
     position: 'Content Creator',
     badge: 'Executive – Social Media Strategist cum Content Writer',
-    title: 'Producing digital content that enhances brand clarity and recall',
+    title: 'A digital community coordinator specializing in real-time professional network monitoring and seamless feed optimization.',
     description:
-      'Content creation is focused on professionalism, consistency, and brand impact. Visual and written assets are developed to support campaigns and buyer engagement. The approach emphasises clarity, relevance, and memorability.',
+      'Vishal manages day-to-day social platform operations and executes structured content schedules to keep corporate profiles active. He handles accurate asset tagging, rapid audience interaction cycles, and brand tone enforcement, ensuring that digital communities remain responsive and reflective of a premium corporate identity.',
     image: '/team/Vishal.jpg',
+  },
+
+  {
+    name: 'Atul Kumar',
+    position: 'Growth Marketer',
+    badge: 'Performance Marketing Executive',
+    title: 'A campaign analyst specializing in the operational management, optimization, and tracking of multi-channel digital ad accounts.',
+    description:
+      'Atul supports the paid acquisition team by setting up audience segments, managing budget tracking, and conducting rigorous A/B testing on ad variations. He isolates micro-trends within post-click user behavior and campaign analytics, providing the actionable data required to steadily drop cost-per-lead metrics.',
+    image: '/team/atul.jpeg',
+  },
+
+  {
+    name: 'Shikha Kushwaha',
+    position: 'Exec. Web Developer',
+    badge: 'Executive Web Developer',
+    title: 'A front-end development specialist dedicated to transforming complex wireframes into responsive, pixel-perfect web interfaces.',
+    description:
+      'Shikha handles front-end component optimization, clean semantic formatting, and cross-browser responsiveness across all modern devices. Her technical execution ensures that website layouts natively support technical SEO benchmarks while delivering slick, high-speed user experiences that minimize bounce rates.',
+    image: '/team/shikhaa.jpeg',
+  },
+  {
+    name: 'Shruti Verma',
+    position: 'Lead Graphic Designer',
+    badge: 'Lead Graphic Designer ',
+    title: 'A senior visual designer expert at commanding corporate aesthetics and translating high-level branding concepts into premium assets.',
+    description:
+      'Shruti sets the creative benchmark for the design cell, focusing on maintaining strict visual consistency across multi-channel corporate marketing campaigns. She refines asset guidelines and mentors team execution, ensuring that complex data layouts are deployed with immaculate precision, elite typography, and high brand authority. ',
+    image: '/team/Shruti.jpg',
   },
   {
     name: 'Priyanshu',
     position: 'Sr. Graphic Designer',
-    badge: 'Sr. Graphic Designer',
-    title: 'Designing premium visuals that elevate brand identity and campaigns',
+    badge: 'Senior Graphic Designer ',
+    title: 'A senior graphic artist specializing in structuring conversion-focused visual layouts and premium corporate vector artwork.',
     description:
-      'Graphic design delivers polished visual assets that reinforce brand identity and campaign messaging. Creative quality is matched with commercial clarity. The work supports stronger market positioning and visual differentiation.',
+      'Priyanshu handles the layout engineering of key digital assets, strategically structuring visual components to guide the users eye toward critical conversion focal points. He incorporates modern design trends into corporate collateral, transforming dense technical data into beautifully clean, easily digestible visual materials. ',
     image: '/team/Priyanshu.jpg',
-  },
-  {
-    name: 'Shruti Verma',
-    position: 'Exec. Web Developer',
-    badge: 'Sr. Graphic Designer',
-    title: 'Building intuitive digital interfaces that improve performance and conversions',
-    description:
-      'Interface development focuses on intuitive navigation and user-driven effectiveness. Page flows are designed to make decisions easier and engagement clearer. The result is a more professional digital experience that supports conversion outcomes.',
-    image: '/team/Shruti.jpg',
-  },
-  {
-    name: 'Ankita Bisht',
-    position: 'Exec. Graphic Designer',
-    badge: 'Executive Graphic Designer',
-    title: 'Crafting polished visuals that support brand identity and campaign goals',
-    description:
-      'Visual and layout design is aligned with brand consistency and strategic objectives. Creative outputs are structured to support commercial messaging and audience engagement. Quality is balanced with clarity for effective communication.',
-    image: '/team/Ankita.jpg',
   },
   {
     name: 'Shivika Pandey',
     position: 'Graphic & CRE',
-    badge: 'Graphic & Client Relationship Executive',
-    title: 'Combining design and messaging to strengthen client-facing brand experiences',
+    badge: 'Executive Graphic Designer & Content Creator ',
+    title: 'A hybrid creative specialist specializing in fusing striking graphic layouts with agile, high-engagement copywriting.',
     description:
-      'Design and client communication are integrated to build brand confidence and clarity. Creative assets are developed with customer-facing professionalism in mind. Messaging is crafted to support business credibility and engagement.',
+      'Shivika handles the creation of multi-dimensional visual assets tailored specifically for fast-paced professional feeds. She balances copy objectives with graphic formatting to explain complex, technical product attributes through clean storytelling, engineering assets that maximize click-through rates. ',
     image: '/team/Shivika.jpeg',
+  },
+  {
+    name: 'Ankita Bisht',
+    position: 'Exec. Graphic Designer',
+    badge: 'Executive Graphic Designer ',
+    title: 'A precision designer expert at delivering clean, high-fidelity digital graphics under tight corporate timelines. ',
+    description:
+      'Ankita manages digital interface components, color theory application, and vector assets for diverse marketing channels. She collaborates closely with the performance and content teams to align structured typography with direct-response marketing principles, ensuring that promotional banners and corporate decks remain sleek and on-brand. ',
+    image: '/team/Ankita.jpg',
   },
   {
     name: 'Navneet Pandey',
     position: 'Exec. Graphic Designer',
     badge: 'Executive Graphic Designer',
-    title: 'Creating campaign graphics that amplify visibility and attract customers',
+    title: 'A corporate asset designer specializing in digital illustration and geometric layout structuring for physical and digital media.',
     description:
-      'Campaign graphic design emphasises visibility, clarity, and alignment with marketing goals. Visual assets are created to support audience attention and conversion. The focus is on strong creative impact and consistent messaging.',
+      'Navneet handles the development of elegant visual assets from rough abstract concepts, focusing heavily on maximizing visual clarity within corporate collateral. By strictly adhering to established brand identity kits, he ensures complete visual continuity across all marketing materials to reinforce corporate trust. ',
     image: '/team/Navneet.jpg',
   },
   {
     name: 'Shaista',
     position: 'SEO Executive',
     badge: 'SEO Executive',
-    title: 'Boosting search visibility through strategic SEO execution and keyword optimisation',
+    title: 'An organic optimization specialist specializing in daily search analytics, crawlability audits, and long-tail metadata optimization.',
     description:
-      'SEO execution improves organic visibility through keyword strategy, content optimisation, and technical refinement. Search performance is aligned with business objectives and industry demand. The process supports qualified traffic and better search rankings.',
+      'Shaista manages the tactical execution of our SEO strategies, tracking on-page ranking performance and auditing backlink profile health. She continuously evaluates search trend data and deploys targeted long-tail optimizations within site text, isolating immediate ranking opportunities to drive consistent inbound buyer enquiries.',
     image: '/team/Shaista.jpg',
   },
 ];
@@ -243,8 +254,8 @@ export default function TeamSection() {
                   type="button"
                   onClick={() => setActiveIndex(index)}
                   className={`min-w-[150px] team-dx shrink-0 rounded-[28px] border px-4 py-4 text-left transition-colors duration-200 ${isActive
-                      ? 'border-orange-300 bg-orange-50 shadow-lg'
-                      : 'border-slate-200 bg-white hover:border-slate-300'
+                    ? 'border-orange-300 bg-orange-50 shadow-lg'
+                    : 'border-slate-200 bg-white hover:border-slate-300'
                     }`}
                 >
                   <div className="flex flex-col items-center text-center gap-3">
@@ -281,13 +292,13 @@ export default function TeamSection() {
               <span className="h-2 w-2 rounded-full bg-sky-500"></span>
               {activeMember.badge}
             </span>
-            <h3 className="mt-6 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h3 className="mt-6 text-2xl font-semibold tracking-tight text-slate-900">
               {activeMember.title}
             </h3>
-            <p className="mt-5 text-lg font-semibold text-slate-900">
+            <p className="mt-5 text-base font-medium text-slate-900">
               <em>
-              {activeMember.description}
-            </em>
+                {activeMember.description}
+              </em>
             </p>
             {activeMember.linkedin && (
               <a
