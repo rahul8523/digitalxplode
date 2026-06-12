@@ -85,7 +85,7 @@ const teamMembers = [
     title: 'A technical search strategist expert at engineering deep keyword architectures to dominate high-intent B2B search rankings.',
     description:
       'Aniket commands our organic search frameworks, executing technical site audits, semantic content silo structures, and advanced schema maps. He targets high-value keyword clusters that reach procurement officers, driving sustained organic growth and positioning manufacturing brands ahead of global competitors. ',
-    image: '/team/aniket.png',
+    image: '/team/aniket.jpg',
   },
   {
     name: 'Shubham Tiwari',

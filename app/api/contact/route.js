@@ -13,10 +13,10 @@ const transporter = nodemailer.createTransport({
 
 const bccRecipients = [
   'sud.arora007@gmail.com',
-  'singhrahulbly123@gmail.com',
   'info@digitalxplode.com',
   'shweta@digitalxplode.com',
   'kush@digitalxplode.com',
+  'dxcampaignleads@gmail.com',
 ];
 
 function isValidEmail(value) {
