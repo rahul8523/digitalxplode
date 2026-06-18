@@ -45,7 +45,7 @@ export default function Header() {
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/DigitalXplode"
+                href="https://www.facebook.com/digitalxplodeofficial/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:bg-[#1877F2] text-[#1877F2] hover:text-[#fff]"
