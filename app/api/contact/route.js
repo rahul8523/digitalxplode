@@ -48,7 +48,7 @@ export async function POST(request) {
       replyTo: email,
       to: 'info@digitalxplode.com',
       bcc: bccRecipients.join(', '),
-      subject: `Digital Xplode Form Submission from ${name}`,
+      subject: `DXPL | Manufacturing Lead ${name}`,
       text: `Company Name: ${companyName || 'N/A'}\nName: ${name}\nEmail: ${email}\nContact: ${contact}\n\nThis message was sent from the website contact form.`,
       html: `<p><strong>Company Name:</strong> ${companyName || 'N/A'}</p>
              <p><strong>Name:</strong> ${name}</p>
