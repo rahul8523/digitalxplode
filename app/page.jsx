@@ -1,6 +1,7 @@
 ﻿'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import ClientsShowcase from '@/components/ClientsShowcase';
 import StudentSuccessStories from '@/components/StudentSuccessStories';
@@ -8,6 +9,7 @@ import TeamSection from '@/components/TeamSection';
 import FAQ from '@/components/FAQ';
 
 export default function Home() {
+  const router = useRouter();
   const [openIndex, setOpenIndex] = useState(0);
   const [showCallMenu, setShowCallMenu] = useState(false);
   const practitionerItems = [
@@ -195,6 +197,11 @@ export default function Home() {
       setStatus({ loading: false, message: result.message || 'Your request has been sent successfully.', type: 'success' });
       setFormData({ companyName: '', name: '', email: '', contact: '', agree: false });
       setErrors({});
+      
+      // Redirect to thank-you page after successful submission
+      setTimeout(() => {
+        router.push('/thank-you');
+      }, 500);
     } catch (error) {
       setStatus({ loading: false, message: error.message || 'Unable to send the message right now.', type: 'error' });
     }
