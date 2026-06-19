@@ -19,7 +19,7 @@ export default function ThankYouPage() {
     return (
     <>
             <Header />
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] px-4">
+            <div className="pt-20 my-20 sm:my-40 flex items-center justify-center bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] px-4">
                 <div className="max-w-2xl w-full text-center">
                     {/* Success Icon */}
                     <div className="mb-8 flex justify-center">
@@ -63,18 +63,28 @@ export default function ThankYouPage() {
                         {/* Description */}
                         <div className="space-y-4">
                             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto">
-                                Our team has received your inquiry and will review it carefully. We appreciate your interest and will get back to you shortly with a personalized solution for your manufacturing business.
+                               Your inquiry has been received. <br/>Our team will connect with you shortly.
                             </p>
                         </div>
 
                         {/* Closing */}
-                        <div className="pt-4 space-y-3">
+                        {/* <div className="pt-4 space-y-3">
                             <p className="text-lg text-slate-700 font-medium">
                                 Best regards,
                             </p>
                             <p className="text-lg text-slate-600">
                                 The Digital Xplode Team
                             </p>
+                        </div> */}
+
+                        {/* Back to Home Button */}
+                        <div className="pt-8">
+                            <button
+                                onClick={() => router.push('/')}
+                                className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                            >
+                                Back to Home
+                            </button>
                         </div>
                     </div>
 
