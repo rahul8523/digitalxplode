@@ -22,15 +22,15 @@ export default function ThankYouPage() {
     return (
     <>
 
-        <Script id="google-conversion" strategy="afterInteractive">
-{`
-gtag('event', 'conversion', {
-  send_to: 'AW-18249413643/gmHSCMHqgsEcEIvo__1D',
-  value: 1.0,
-  currency: 'INR'
-});
-`}
-</Script>
+    <Script id="google-ads-conversion" strategy="afterInteractive">
+      {`
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18249413643/gmHSCMHqgsEcEIvo__1D',
+          'value': 1.0,
+          'currency': 'INR'
+        });
+      `}
+    </Script>
             <Header />
             <div className="pt-20 my-20 sm:my-40 flex items-center justify-center bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] px-4">
                 <div className="max-w-2xl w-full text-center">
