@@ -7,11 +7,8 @@ import ClientsShowcase from '@/components/ClientsShowcase';
 import StudentSuccessStories from '@/components/StudentSuccessStories';
 import TeamSection from '@/components/TeamSection';
 import FAQ from '@/components/FAQ';
-import Script from "next/script";
 
 export default function Home() {
-
-
 
   const router = useRouter();
   const [openIndex, setOpenIndex] = useState(0);
@@ -215,23 +212,9 @@ export default function Home() {
 
     <>
     
-    
-         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18249413643"></script>
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18249413643');
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18249413643/gmHSCMHqgsEcEIvo__1D',
-            'value': 1.0,
-            'currency': 'INR'
-          });` }} />
-    
   
     <div className="min-h-screen bg-gradient-to-b from-[#eff7ff] via-[#f8fbff] to-[#fbfcff] text-slate-950 pb-28">
       <Header />
-
-
 
       <main className="">
         <section className="mx-auto max-w-[1240px] py-12 px-4">
