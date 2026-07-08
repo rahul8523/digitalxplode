@@ -16,6 +16,17 @@ export default function ThankYouPage() {
         return () => clearTimeout(timer);
     }, [router]);
 
+
+      useEffect(() => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18249413643/gmHSCMHqgsEcEIvo__1D",
+        value: 1.0,
+        currency: "INR",
+      });
+    }
+  }, []);
+
     return (
     <>
             <Header />
